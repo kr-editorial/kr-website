@@ -241,8 +241,8 @@ shadcn/ui components to install: `button`, `input`, `textarea`, `select`, `label
 Build order: **1) UI primitives → 2) brand components → 3) section blocks → 4) pages.** Pages contain no bespoke markup beyond composing sections; sections compose brand components and primitives.
 
 ```
-src/
-├── app/                    # pages (composition only)
+app/                          # Next.js application root
+├── app/                      # App Router pages (composition only)
 ├── components/
 │   ├── ui/                 # shadcn/ui primitives (generated)
 │   ├── brand/              # KR-specific reusable components

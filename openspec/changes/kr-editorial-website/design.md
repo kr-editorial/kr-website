@@ -70,8 +70,8 @@ Greenfield Next.js project for KR Editorial — an editorial services publisher 
 ## Component Architecture
 
 ```
-src/
-├── app/                    # pages (composition only)
+app/                          # Next.js application root
+├── app/                      # App Router pages
 ├── components/
 │   ├── ui/                 # shadcn/ui primitives
 │   ├── brand/              # 17 brand components (Logo, PillLabel, BookCard, etc.)

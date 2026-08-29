@@ -10,7 +10,7 @@ context: |
   Design: navy (#2C2E3E) + cream (#FDF6EC), grid texture, pill labels, blob decorations.
   Component layers: ui/ → brand/ → sections/ → layout/ → pages.
   Primary CTA: "Solicitar orçamento" → /contato with captcha-protected quote form.
-  Reference spec: SPEC.md at project root. Brand assets: kr-logo.jpg, post-reference/.
+  Reference spec: SPEC.md at project root. Next.js app in app/. Brand assets: kr-logo.jpg, post-reference/.
 
 rules:
   proposal:

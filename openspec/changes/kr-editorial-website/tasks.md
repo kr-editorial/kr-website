@@ -1,12 +1,12 @@
 ## 1. Project Setup
 
-- [ ] 1.1 Scaffold Next.js 15+ project with TypeScript, Tailwind CSS v4, and App Router; verify `npm run dev` starts without errors
+- [ ] 1.1 Scaffold Next.js 15+ project in `app/` with TypeScript, Tailwind CSS v4, and App Router; verify `npm run dev` starts without errors from `app/`
 - [ ] 1.2 Initialize shadcn/ui and install primitives (button, input, textarea, select, label, card, badge, separator, sheet, sonner); verify components render in a test page
 - [ ] 1.3 Configure design tokens (navy/cream CSS variables) in `globals.css` and shadcn theme; verify colors match spec (`#2C2E3E`, `#FDF6EC`)
 - [ ] 1.4 Set up DM Sans via `next/font` in root layout; verify font loads without layout shift
 - [ ] 1.5 Install lucide-react, react-hook-form, zod, @marsidev/react-turnstile, resend, react-email; verify all packages resolve in `package.json`
 - [ ] 1.6 Create `content/` directory with seed `books.json`, `services.json`, `site.json`; verify data matches types in SPEC.md
-- [ ] 1.7 Copy `kr-logo.jpg` to `public/` and create white logo variant for navy backgrounds; verify both variants display correctly
+- [ ] 1.7 Copy `../kr-logo.jpg` to `app/public/` and create white logo variant for navy backgrounds; verify both variants display correctly
 - [ ] 1.8 Create `lib/` utilities: `cn()` helper, data loaders for content JSON, TypeScript types for Book/Service/SiteContent; verify imports work
 
 ## 2. Brand Components (Layer 2)
