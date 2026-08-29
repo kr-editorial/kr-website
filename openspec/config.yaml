@@ -1,0 +1,29 @@
+schema: spec-driven
+
+context: |
+  KR Editorial — editorial services publisher website (not a bookstore).
+  Tagline: "Do rascunho à publicação."
+  Founders: Karine Z. Lazzaretti, Rodrigo S. Lazzaretti.
+  Portuguese-first copy. Services-first site strategy; portfolio as social proof.
+  Stack: Next.js 15+ (App Router), TypeScript, Tailwind CSS v4, shadcn/ui,
+  lucide-react, react-hook-form, zod, Cloudflare Turnstile, Resend, Vercel.
+  Design: navy (#2C2E3E) + cream (#FDF6EC), grid texture, pill labels, blob decorations.
+  Component layers: ui/ → brand/ → sections/ → layout/ → pages.
+  Primary CTA: "Solicitar orçamento" → /contato with captcha-protected quote form.
+  Reference spec: SPEC.md at project root. Brand assets: kr-logo.jpg, post-reference/.
+
+rules:
+  proposal:
+    - Reference SPEC.md for domain context
+    - List capabilities as site-foundation, marketing-pages, portfolio, quote-request
+  specs:
+    - Use SHALL/MUST for normative requirements
+    - Each requirement must have at least one scenario with #### headers
+    - Focus on observable behavior, not implementation details
+  design:
+    - Reference SPEC.md component architecture and library choices
+    - Document decisions with rationale and alternatives considered
+  tasks:
+    - Follow build order: setup → brand components → layout → sections → pages → quote flow → polish
+    - Each task must include verification criteria
+    - Group tasks by numbered sections matching the build order
