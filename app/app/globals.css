@@ -1,26 +1,103 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "DM Sans", "DM Sans Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "DM Sans", "DM Sans Fallback", ui-sans-serif, system-ui, sans-serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* KR Editorial brand tokens */
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-cream: var(--cream);
+  --color-cream-warm: var(--cream-warm);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  /* Brand palette */
+  --navy: #2c2e3e;
+  --navy-deep: #302b70;
+  --cream: #fdf6ec;
+  --cream-warm: #f9f5f0;
+
+  /* shadcn theme mapped to brand */
+  --background: var(--cream);
+  --foreground: var(--navy);
+  --card: #fffcf5;
+  --card-foreground: var(--navy);
+  --popover: #fffcf5;
+  --popover-foreground: var(--navy);
+  --primary: var(--navy);
+  --primary-foreground: var(--cream);
+  --secondary: #f3ecdf;
+  --secondary-foreground: var(--navy);
+  --muted: #f4eee2;
+  --muted-foreground: #5f6172;
+  --accent: var(--navy-deep);
+  --accent-foreground: var(--cream);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: rgb(44 46 62 / 0.14);
+  --input: rgb(44 46 62 / 0.22);
+  --ring: var(--navy-deep);
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply scroll-smooth font-sans;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background-color: var(--navy-deep);
+    color: var(--cream);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  /* Graph-paper texture (carousel slides 2 and 4) */
+  .bg-grid-paper {
+    background-image:
+      linear-gradient(to right, rgb(44 46 62 / 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(44 46 62 / 0.055) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .bg-grid-paper-light {
+    background-image:
+      linear-gradient(to right, rgb(253 246 236 / 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(253 246 236 / 0.07) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
 }

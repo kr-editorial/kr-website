@@ -1,0 +1,57 @@
+export type BookFormat = "livro" | "ebook";
+
+export type Book = {
+  slug: string;
+  title: string;
+  author: string;
+  cover: string;
+  format: BookFormat;
+  categories: string[];
+  badge?: "lançamento" | "novo";
+  excerpt: string;
+  description: string;
+  isbn?: string;
+  pages?: number;
+  year?: number;
+  featured?: boolean;
+  relatedSlugs?: string[];
+};
+
+export type Service = {
+  slug: string;
+  title: string;
+  pill: string;
+  description: string;
+  items: string[];
+  icon: string;
+};
+
+export type ProcessStep = {
+  title: string;
+  description: string;
+};
+
+export type Founder = {
+  name: string;
+  role?: string;
+};
+
+export type SiteContent = {
+  name: string;
+  tagline: string;
+  url: string;
+  founders: Founder[];
+  mission: string;
+  heroHeadline: string;
+  heroCta: string;
+  valueProps: string[];
+  audiences: string[];
+  processSteps: ProcessStep[];
+  contact: {
+    email: string;
+    phone: string;
+    city: string;
+    instagram?: string;
+    whatsapp?: string;
+  };
+};

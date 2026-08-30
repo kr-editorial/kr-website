@@ -1,0 +1,49 @@
+{
+  "name": "KR Editorial",
+  "tagline": "Edições Literárias",
+  "url": "https://kreditorial.com.br",
+  "founders": [
+    { "name": "Karine Z. Lazzaretti", "role": "Fundadora e Editora" },
+    { "name": "Rodrigo S. Lazzaretti", "role": "Fundador e Editor" }
+  ],
+  "mission": "Trabalhamos com excelência técnica, respeito à identidade do autor e rigor acadêmico, garantindo clareza, organização, estética profissional e conformidade normativa.",
+  "heroHeadline": "Do rascunho à publicação",
+  "heroCta": "Solicite um orçamento e leve seu projeto do rascunho à publicação final com qualidade editorial.",
+  "valueProps": [
+    "Publicação profissional",
+    "Aprovação acadêmica",
+    "Credibilidade editorial",
+    "Texto claro, coeso e bem estruturado"
+  ],
+  "audiences": [
+    "Autores",
+    "Acadêmicos",
+    "Pastores",
+    "Pesquisadores",
+    "Instituições"
+  ],
+  "processSteps": [
+    {
+      "title": "Rascunho",
+      "description": "Você envia seu original e conversamos sobre os objetivos da obra."
+    },
+    {
+      "title": "Revisão",
+      "description": "Correção ortográfica, gramatical e textual, com revisão de estilo."
+    },
+    {
+      "title": "Diagramação",
+      "description": "Layout profissional do miolo e da capa, para impresso e digital."
+    },
+    {
+      "title": "Publicação",
+      "description": "Sua obra pronta para o mundo, em livro impresso ou e-book."
+    }
+  ],
+  "contact": {
+    "email": "contato@kreditorial.com.br",
+    "phone": "(00) 00000-0000",
+    "city": "Brasil",
+    "instagram": "https://instagram.com/kreditorial"
+  }
+}

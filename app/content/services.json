@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "editoracao-diagramacao",
+    "title": "Editoração e Diagramação",
+    "pill": "Editoração profissional",
+    "description": "Transformamos seu conteúdo em uma obra pronta para publicação, com layout profissional para livros impressos e e-books.",
+    "items": [
+      "Projeto gráfico do miolo e da capa",
+      "Diagramação para impresso e digital",
+      "Preparação de arquivos para gráfica",
+      "Conversão para e-book (EPUB e PDF)"
+    ],
+    "icon": "layout-template"
+  },
+  {
+    "slug": "obras-academicas",
+    "title": "Obras Acadêmicas",
+    "pill": "Rigor acadêmico",
+    "description": "Especializados em trabalhos científicos que exigem precisão e conformidade com as normas da sua instituição.",
+    "items": [
+      "Artigos científicos",
+      "TCCs e monografias",
+      "Dissertações de mestrado",
+      "Teses de doutorado"
+    ],
+    "icon": "graduation-cap"
+  },
+  {
+    "slug": "normalizacao-abnt",
+    "title": "Normalização ABNT",
+    "pill": "Conformidade normativa",
+    "description": "Adequação completa do seu trabalho às normas da Associação Brasileira de Normas Técnicas.",
+    "items": [
+      "Formatação de citações e referências",
+      "Estrutura de capítulos e seções",
+      "Elementos pré e pós-textuais",
+      "Tabelas, figuras e apêndices"
+    ],
+    "icon": "ruler"
+  },
+  {
+    "slug": "revisao-textual",
+    "title": "Revisão Textual",
+    "pill": "Texto claro e coeso",
+    "description": "Correção minuciosa que preserva a voz do autor enquanto garante clareza, coesão e correção.",
+    "items": [
+      "Correção ortográfica e gramatical",
+      "Revisão de coesão e coerência",
+      "Adequação ao público-alvo",
+      "Sugestões de aprimoramento"
+    ],
+    "icon": "pen-line"
+  },
+  {
+    "slug": "padronizacao-editorial",
+    "title": "Padronização Editorial",
+    "pill": "Identidade preservada",
+    "description": "Revisão de estilo e padronização editorial que respeitam a identidade do autor e valorizam a obra.",
+    "items": [
+      "Revisão de estilo",
+      "Padronização tipográfica",
+      "Uniformização de nomenclaturas",
+      "Consistência entre capítulos"
+    ],
+    "icon": "book-check"
+  }
+]
