@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { PageShell } from "@/components/layout/page-shell";
 import { CtaBandSection } from "@/components/sections/cta-band-section";
 import { PortfolioGridSection } from "@/components/sections/portfolio-grid-section";
-import { books, getAllCategories } from "@/lib/content";
+import { books } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Livros publicados",
@@ -20,9 +19,7 @@ export default function PortfolioPage() {
       lede="Cada obra publicada passou pelo nosso processo completo: revisão, diagramação, normalização e publicação."
       breadcrumbs={[{ label: "Início", href: "/" }, { label: "Livros publicados" }]}
     >
-      <Suspense>
-        <PortfolioGridSection books={books} categories={getAllCategories()} />
-      </Suspense>
+      <PortfolioGridSection books={books} />
       <CtaBandSection />
     </PageShell>
   );

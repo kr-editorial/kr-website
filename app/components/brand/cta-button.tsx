@@ -28,6 +28,7 @@ export function CtaButton({
 }: CtaButtonProps) {
   return (
     <Button
+      nativeButton={false}
       render={<Link href={href} />}
       size={size}
       className={cn(
