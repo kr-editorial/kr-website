@@ -28,10 +28,10 @@ export function BookCard({ book }: { book: Book }) {
         ) : null}
       </div>
       <div className="flex flex-col gap-0.5 px-1">
-        <span className="text-[11px] font-medium tracking-widest text-muted-foreground uppercase">
-          {book.format === "ebook" ? "E-book" : "Livro"}
-        </span>
         <h3 className="leading-snug font-semibold text-navy">{book.title}</h3>
+        {book.subtitle ? (
+          <p className="text-sm text-pretty text-navy/65">{book.subtitle}</p>
+        ) : null}
         <p className="text-sm text-muted-foreground">{book.author}</p>
         <span className="mt-1 inline-flex items-center gap-1 text-sm font-medium text-navy-deep opacity-0 transition-opacity duration-200 group-hover:opacity-100">
           Saiba mais

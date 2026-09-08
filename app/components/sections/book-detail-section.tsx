@@ -57,6 +57,9 @@ export function BookDetailSection({ book }: { book: Book }) {
             <h1 className="text-3xl font-bold tracking-tight text-balance text-navy sm:text-4xl">
               {book.title}
             </h1>
+            {book.subtitle ? (
+              <p className="text-lg text-pretty text-navy/70">{book.subtitle}</p>
+            ) : null}
             <p className="text-lg text-muted-foreground">{book.author}</p>
           </div>
 

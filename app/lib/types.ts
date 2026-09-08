@@ -3,6 +3,7 @@ export type BookFormat = "livro" | "ebook";
 export type Book = {
   slug: string;
   title: string;
+  subtitle?: string;
   author: string;
   cover: string;
   format: BookFormat;

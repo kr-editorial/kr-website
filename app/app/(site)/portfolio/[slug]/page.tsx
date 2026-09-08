@@ -23,7 +23,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${book.title} — ${book.author}`,
       description: book.excerpt,
-      images: [{ url: book.cover, width: 600, height: 900 }],
+      images: [{ url: book.cover, width: 1080, height: 1617 }],
     },
   };
 }
