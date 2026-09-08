@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/brand/section-heading";
 import { getFeaturedBooks } from "@/lib/content";
 
 export function PortfolioTeaserSection() {
-  const featured = getFeaturedBooks(4);
+  const featured = getFeaturedBooks(8);
 
   return (
     <section className="bg-cream-warm">

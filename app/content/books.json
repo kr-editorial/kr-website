@@ -1,17 +1,5 @@
 [
   {
-    "slug": "a-crise-do-homem-interior",
-    "title": "A Crise do Homem Interior",
-    "author": "Bruno S. Lazzaretti",
-    "cover": "/covers/a-crise-do-homem-interior.webp",
-    "format": "livro",
-    "categories": ["religioso"],
-    "excerpt": "Uma reflexão sobre a crise do homem interior e o chamado à transformação de dentro para fora.",
-    "description": "A Crise do Homem Interior, de Bruno S. Lazzaretti, enfrenta o conflito íntimo que habita o ser humano e o convite a olhar para dentro com honestidade. A obra propõe um caminho de confronto e restauração do homem interior à luz da fé cristã.",
-    "featured": false,
-    "relatedSlugs": ["entre-a-cruz-e-a-decisao", "a-logica-da-serpente"]
-  },
-  {
     "slug": "a-logica-da-serpente",
     "title": "A Lógica da Serpente",
     "subtitle": "O deicídio no discurso público",
@@ -34,7 +22,7 @@
     "categories": ["religioso"],
     "excerpt": "Uma leitura sobre a nova aliança e o cumprimento da promessa de Deus em Cristo.",
     "description": "A Nova Aliança, de Gadyel Espindola, percorre o cumprimento da promessa em Cristo — o centro da revelação bíblica e da esperança cristã. Uma obra para quem deseja compreender a aliança de Deus com o seu povo.",
-    "featured": false,
+    "featured": true,
     "relatedSlugs": ["cristo-o-verbo-encarnado", "as-bodas-do-cordeiro"]
   },
   {
@@ -60,7 +48,7 @@
     "categories": ["religioso"],
     "excerpt": "Um tratado sobre batalha espiritual e os inimigos da obra de Deus.",
     "description": "Arquétipos do Mal, de Geremias dos Santos, é um tratado sobre batalha espiritual. A obra identifica os inimigos da obra de Deus e chama o leitor a vigilância, discernimento e perseverança na fé.",
-    "featured": false,
+    "featured": true,
     "relatedSlugs": ["apocalipse-os-poderes-do-mundo-vindouro", "entre-a-cruz-e-a-decisao"]
   },
   {
@@ -72,7 +60,7 @@
     "categories": ["religioso"],
     "excerpt": "Uma meditação sobre as bodas do Cordeiro e a esperança da Igreja.",
     "description": "As Bodas do Cordeiro, de Rodrigo Lazzaretti, contempla o encontro prometido entre Cristo e a sua Igreja. Uma obra que une esperança escatológica e chamado à fidelidade no tempo presente.",
-    "featured": true,
+    "featured": false,
     "relatedSlugs": ["a-logica-da-serpente", "entre-a-cruz-e-a-decisao"]
   },
   {
@@ -97,7 +85,7 @@
     "categories": ["religioso"],
     "excerpt": "A jornada do chamado — da rede lançada à vida no Reino.",
     "description": "Da Rede ao Reino, de Luiz Gonçalves Neto, narra o movimento de um chamado, uma resposta e um propósito eterno. Da vida comum ao discipulado, a obra acompanha o convite de Cristo a deixar as redes e seguir o Reino.",
-    "featured": false,
+    "featured": true,
     "relatedSlugs": ["prossigo-para-o-alvo", "relatos-missionarios"]
   },
   {
@@ -110,7 +98,7 @@
     "categories": ["religioso"],
     "excerpt": "Uma abordagem de eleição, predestinação e livre-arbítrio diante da cruz.",
     "description": "Entre a Cruz e a Decisão reúne Rodrigo S. Lazzaretti e Geremias dos Santos em torno de um dos temas mais exigentes da teologia: eleição, predestinação e livre-arbítrio. A obra convida o leitor a pensar essas questões à sombra da cruz.",
-    "featured": true,
+    "featured": false,
     "relatedSlugs": ["a-logica-da-serpente", "arquetipos-do-mal"]
   },
   {
@@ -123,7 +111,7 @@
     "categories": ["religioso"],
     "excerpt": "Um chamado à cura do corpo de Cristo e à saúde da igreja local.",
     "description": "Igrejas Doentes, de Diego Marin, é um chamado à cura do corpo de Cristo. A obra confronta enfermidades da vida comunitária e aponta caminhos de restauração para a igreja local.",
-    "featured": false,
+    "featured": true,
     "relatedSlugs": ["rabiscos-do-ceu-volume-1", "quando-o-pulpito-pesa"]
   },
   {
@@ -202,6 +190,18 @@
     "relatedSlugs": ["igrejas-doentes", "o-legado-de-neemias"]
   },
   {
+    "slug": "a-crise-do-homem-interior",
+    "title": "A Crise do Homem Interior",
+    "author": "Bruno S. Lazzaretti",
+    "cover": "/covers/a-crise-do-homem-interior.webp",
+    "format": "livro",
+    "categories": ["religioso"],
+    "excerpt": "Uma reflexão sobre a crise do homem interior e o chamado à transformação de dentro para fora.",
+    "description": "A Crise do Homem Interior, de Bruno S. Lazzaretti, enfrenta o conflito íntimo que habita o ser humano e o convite a olhar para dentro com honestidade. A obra propõe um caminho de confronto e restauração do homem interior à luz da fé cristã.",
+    "featured": true,
+    "relatedSlugs": ["entre-a-cruz-e-a-decisao", "a-logica-da-serpente"]
+  },
+  {
     "slug": "rabiscos-do-ceu-volume-1",
     "title": "Rabiscos do Céu",
     "subtitle": "Volume 1",
@@ -236,7 +236,7 @@
     "categories": ["religioso"],
     "excerpt": "Relatos de campo sobre a vida missionária e o envio do Evangelho.",
     "description": "Relatos Missionários, de Daniel Steinhauser, reúne testemunhos da vida no campo. A obra aproxima o leitor da missão — das casas, dos caminhos e das histórias que nascem quando o Evangelho é anunciado.",
-    "featured": false,
+    "featured": true,
     "relatedSlugs": ["da-rede-ao-reino", "prossigo-para-o-alvo"]
   }
 ]
