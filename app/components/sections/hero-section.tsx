@@ -33,9 +33,6 @@ export function HeroSection() {
               Conheça os serviços
             </CtaButton>
           </div>
-          <p className="mt-4 text-xs font-medium tracking-[0.25em] text-cream/60 uppercase">
-            {site.founders.map((founder) => founder.name).join(" · ")}
-          </p>
         </div>
 
         <div className="relative hidden flex-1 items-center justify-center lg:flex">

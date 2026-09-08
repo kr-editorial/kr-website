@@ -8,7 +8,7 @@ import { MissionSection } from "@/components/sections/mission-section";
 export const metadata: Metadata = {
   title: "Quem Somos",
   description:
-    "Conheça a KR Editorial: quem somos, nossa missão e a filosofia editorial que une sensibilidade literária e rigor acadêmico.",
+    "A KR Editorial nasceu da união entre propósito, conhecimento e um sonho: servir a Deus por meio da literatura cristã. Conheça Rodrigo e Karine Lazzaretti.",
   alternates: { canonical: "/quem-somos" },
 };
 
@@ -17,7 +17,7 @@ export default function QuemSomosPage() {
     <PageShell
       pill="Edições Literárias"
       title="Quem Somos"
-      lede="Uma editora fundada na convicção de que toda boa história merece uma edição à altura."
+      lede="Rodrigo Lazzaretti e Karine Lazzaretti"
       breadcrumbs={[{ label: "Início", href: "/" }, { label: "Quem Somos" }]}
     >
       <FoundersSection />

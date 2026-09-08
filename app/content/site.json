@@ -3,10 +3,29 @@
   "tagline": "Edições Literárias",
   "url": "https://kreditorial.com.br",
   "founders": [
-    { "name": "Karine Z. Lazzaretti", "role": "Fundadora e Editora" },
-    { "name": "Rodrigo S. Lazzaretti", "role": "Fundador e Editor" }
+    { "name": "Rodrigo Lazzaretti", "role": "Pregador e Teólogo" },
+    { "name": "Karine Lazzaretti", "role": "Marketing e Comunicação" }
   ],
-  "mission": "Trabalhamos com excelência técnica, respeito à identidade do autor e rigor acadêmico, garantindo clareza, organização, estética profissional e conformidade normativa.",
+  "about": {
+    "intro": "A KR Editorial nasceu da união entre propósito, conhecimento e um sonho que começou de forma simples, mas que ganhou uma dimensão muito maior: servir a Deus por meio da literatura cristã e contribuir para que mensagens que precisam ser ouvidas também possam ser lidas, preservadas e compartilhadas através dos livros.",
+    "rodrigo": [
+      "Rodrigo Lazzaretti, Pregador e Teólogo, iniciou sua trajetória editorial movido pelo desejo de publicar seu próprio livro, e para transformar esse projeto em realidade, decidiu aprofundar os seus conhecimentos em editoração e diagramação, buscando compreender não apenas a mensagem de um livro, mas também todo o cuidado necessário para transformá-lo em uma obra.",
+      "O que começou como a preparação para a realização de um projeto pessoal, logo se tornou uma ferramenta de serviço. Rodrigo passou a aplicar seus conhecimentos na publicação de livros de pregadores e pastores amigos, acompanhando de perto diferentes projetos e adquirindo experiência em cada etapa do processo editorial.",
+      "Ao perceber que havia um propósito maior por trás daquele trabalho, surgiu a visão de estabelecer uma editora que pudesse oferecer aos autores cristãos mais do que a publicação de um livro, mas um caminho para transformar conhecimento, experiências, sermões e mensagens em obras capazes de alcançar gerações."
+    ],
+    "karine": [
+      "Ao seu lado está a sua esposa, Karine Lazzaretti, formada em Marketing e com experiência na área de comunicação e mídia. Em sua trajetória, atuou na mídia da igreja local, especialmente nas transmissões dos cultos ao vivo, desenvolvendo competências em comunicação, organização e apresentação de conteúdos.",
+      "Sua formação e experiência trouxeram ao projeto uma perspectiva estratégica, criativa e comunicacional, complementando a experiência ministerial e editorial de Rodrigo."
+    ],
+    "union": "A experiência ministerial e a produção editorial de Rodrigo, somada à formação em Marketing e à experiência em comunicação e mídia de Karine, formou áreas distintas em união, trazendo origem a uma visão que ultrapassa a ideia de simplesmente produzir livros, e com isso nasceu a KR Editorial.",
+    "fruit": "A KR Editorial é fruto dessa caminhada!",
+    "together": "Um projeto construído a dois, mas pensado para alcançar muitos.",
+    "mission": "Nossa missão é servir autores cristãos com excelência editorial, oferecendo cuidado, profissionalismo e dedicação em cada etapa da construção de uma obra.",
+    "belief": "Nós acreditamos que um livro é mais do que um conjunto de páginas, é uma mensagem que ganha forma, uma história que permanece e uma voz que pode continuar alcançando pessoas mesmo quando o autor já não está presente para pronunciá-la.",
+    "commitment": "Por isso, cada projeto que chega à KR Editorial é tratado com seriedade e propósito; desde a concepção de um rascunho até a publicação, buscamos unir qualidade, identidade, técnica e excelência, respeitando a essência de cada autor e a mensagem que ele deseja transmitir, porque acreditamos que aquilo que Deus coloca no coração de alguém merece ser preparado com excelência para alcançar o coração de outros.",
+    "tagline": "A KR Editorial transforma mensagens em obras e preserva as histórias para que o seu sonho alcance gerações!"
+  },
+  "mission": "A KR Editorial transforma mensagens em obras e preserva as histórias para que o seu sonho alcance gerações!",
   "heroHeadline": "Do rascunho à publicação",
   "heroCta": "Solicite um orçamento e leve seu projeto do rascunho à publicação final com qualidade editorial.",
   "valueProps": [

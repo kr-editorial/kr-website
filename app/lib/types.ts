@@ -36,11 +36,25 @@ export type Founder = {
   role?: string;
 };
 
+export type AboutContent = {
+  intro: string;
+  rodrigo: string[];
+  karine: string[];
+  union: string;
+  fruit: string;
+  together: string;
+  mission: string;
+  belief: string;
+  commitment: string;
+  tagline: string;
+};
+
 export type SiteContent = {
   name: string;
   tagline: string;
   url: string;
   founders: Founder[];
+  about: AboutContent;
   mission: string;
   heroHeadline: string;
   heroCta: string;
