@@ -30,11 +30,6 @@ function getInitials(name: string) {
 
 function AuthorBlock({ name, author }: { name: string; author?: Author }) {
   const roles = author?.roles.slice(0, 2).join(" · ");
-  const bio = author?.bio.length
-    ? author.bio
-    : [
-        `Em breve, uma apresentação de ${name}: trajetória, formação e o que motivou a escrita desta obra.`,
-      ];
 
   return (
     <div className="flex gap-4">
@@ -54,11 +49,13 @@ function AuthorBlock({ name, author }: { name: string; author?: Author }) {
             </p>
           ) : null}
         </div>
-        <div className="space-y-2 text-sm leading-relaxed text-pretty text-muted-foreground">
-          {bio.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
+        {author?.bio.length ? (
+          <div className="space-y-2 text-sm leading-relaxed text-pretty text-muted-foreground">
+            {author.bio.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        ) : null}
       </div>
     </div>
   );
@@ -72,7 +69,7 @@ export function BookDialogContent({ book }: { book: Book }) {
     <DialogContent
       showCloseButton={false}
       aria-describedby={undefined}
-      className="flex max-h-[calc(100dvh-1.5rem)] w-[calc(100%-1.5rem)] max-w-6xl flex-col gap-0 overflow-y-auto p-0 ring-navy/15 sm:max-w-6xl lg:h-[min(88dvh,52rem)] lg:max-h-none lg:flex-row lg:overflow-hidden"
+      className="flex h-[calc(100dvh-1.5rem)] max-h-[calc(100dvh-1.5rem)] w-[calc(100%-1.5rem)] max-w-6xl flex-col gap-0 overflow-hidden p-0 ring-navy/15 sm:max-w-6xl lg:h-[min(88dvh,52rem)] lg:flex-row"
     >
       <DialogClose
         render={
@@ -88,7 +85,7 @@ export function BookDialogContent({ book }: { book: Book }) {
       </DialogClose>
 
       {/* Cover panel */}
-      <div className="relative flex shrink-0 items-center justify-center overflow-hidden bg-navy bg-grid-paper-light px-6 py-8 sm:py-10 lg:w-[46%] lg:px-10 lg:py-14">
+      <div className="relative flex max-h-[38%] shrink-0 items-center justify-center overflow-hidden bg-navy bg-grid-paper-light px-6 py-6 sm:py-8 lg:max-h-none lg:w-[46%] lg:px-10 lg:py-14">
         <div
           aria-hidden
           className="pointer-events-none absolute -top-24 -left-24 size-72 rounded-full bg-navy-deep/60 blur-3xl"
@@ -114,43 +111,42 @@ export function BookDialogContent({ book }: { book: Book }) {
       </div>
 
       {/* Info panel */}
-      <div className="flex min-h-0 flex-1 flex-col lg:overflow-y-auto">
-        <div className="flex flex-col gap-7 p-6 sm:p-8 lg:p-10 lg:pr-14">
-          <div className="space-y-2">
-            <DialogTitle className="text-2xl leading-tight font-bold tracking-tight text-balance text-navy sm:text-3xl lg:text-4xl">
-              {book.title}
-            </DialogTitle>
-            {book.subtitle ? (
-              <p className="text-lg font-medium text-pretty text-navy-deep sm:text-xl">
-                {book.subtitle}
-              </p>
-            ) : null}
-          </div>
-
-          <DialogDescription className="text-base leading-relaxed text-pretty text-foreground">
-            {book.description}
-          </DialogDescription>
-
-          <section className="space-y-4">
-            <h3 className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">
-              {heading}
-            </h3>
-            <div className="space-y-6">
-              {profiles.map(({ name, author }) => (
-                <AuthorBlock key={name} name={name} author={author} />
-              ))}
+      <div className="flex min-h-0 flex-1 flex-col">
+        <div className="min-h-0 flex-1 overflow-y-auto p-6 sm:p-8 lg:p-10 lg:pr-14">
+          <div className="flex flex-col gap-7">
+            <div className="space-y-2">
+              <DialogTitle className="text-2xl leading-tight font-bold tracking-tight text-balance text-navy sm:text-3xl lg:text-4xl">
+                {book.title}
+              </DialogTitle>
+              {book.subtitle ? (
+                <p className="text-lg font-medium text-pretty text-navy-deep sm:text-xl">
+                  {book.subtitle}
+                </p>
+              ) : null}
             </div>
-          </section>
 
-          <div className="flex flex-col items-start gap-3 rounded-xl border border-navy/15 bg-cream-warm p-5 sm:p-6">
-            <p className="font-medium text-navy">
-              Quer publicar uma obra como esta?
-            </p>
-            <CtaButton href={`/contato?livro=${book.slug}`} size="lg">
-              Solicitar orçamento
-              <ArrowRight className="size-4" />
-            </CtaButton>
+            <DialogDescription className="text-base leading-relaxed text-pretty text-foreground">
+              {book.description}
+            </DialogDescription>
+
+            <section className="space-y-4">
+              <h3 className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">
+                {heading}
+              </h3>
+              <div className="space-y-6">
+                {profiles.map(({ name, author }) => (
+                  <AuthorBlock key={name} name={name} author={author} />
+                ))}
+              </div>
+            </section>
           </div>
+        </div>
+
+        <div className="flex shrink-0 justify-end px-6 py-4 sm:px-8 lg:px-10 lg:pr-14">
+          <CtaButton href={`/contato?livro=${book.slug}`} size="sm">
+            Solicitar orçamento
+            <ArrowRight className="size-3.5" />
+          </CtaButton>
         </div>
       </div>
     </DialogContent>
