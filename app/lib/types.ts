@@ -5,6 +5,7 @@ export type Book = {
   title: string;
   subtitle?: string;
   author: string;
+  authorBio?: string;
   cover: string;
   format: BookFormat;
   categories: string[];
