@@ -25,6 +25,28 @@ export function getAuthorByName(name: string): Author | undefined {
   );
 }
 
+export function getAuthorCredits(credit: string): {
+  name: string;
+  author?: Author;
+}[] {
+  const exact = getAuthorByName(credit);
+  if (exact) return [{ name: exact.name, author: exact }];
+
+  const parts = credit
+    .split(/\s+e\s+|,\s+/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  if (parts.length > 1) {
+    return parts.map((part) => {
+      const author = getAuthorByName(part);
+      return { name: author?.name ?? part, author };
+    });
+  }
+
+  return [{ name: credit }];
+}
+
 export function getBookBySlug(slug: string): Book | undefined {
   return books.find((book) => book.slug === slug);
 }

@@ -3,7 +3,6 @@
 import { ArrowRight, XIcon } from "lucide-react";
 import { BookCover } from "@/components/brand/book-cover";
 import { CtaButton } from "@/components/brand/cta-button";
-import { SpecList } from "@/components/brand/spec-list";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,10 +11,8 @@ import {
   DialogDescription,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { categoryLabels } from "@/lib/content";
-import type { Book } from "@/lib/types";
-
-const PLACEHOLDER = "A confirmar";
+import { getAuthorCredits } from "@/lib/content";
+import type { Author, Book } from "@/lib/types";
 
 const badgeLabels: Record<NonNullable<Book["badge"]>, string> = {
   lançamento: "Lançamento",
@@ -31,19 +28,45 @@ function getInitials(name: string) {
     .join("");
 }
 
+function AuthorBlock({ name, author }: { name: string; author?: Author }) {
+  const roles = author?.roles.slice(0, 2).join(" · ");
+  const bio = author?.bio.length
+    ? author.bio
+    : [
+        `Em breve, uma apresentação de ${name}: trajetória, formação e o que motivou a escrita desta obra.`,
+      ];
+
+  return (
+    <div className="flex gap-4">
+      <div
+        aria-hidden
+        className="flex size-12 shrink-0 items-center justify-center rounded-full bg-navy-deep text-sm font-bold text-cream"
+      >
+        {getInitials(name)}
+      </div>
+      <div className="min-w-0 space-y-2">
+        <div>
+          <p className="font-semibold text-navy">{name}</p>
+          {roles ? (
+            <p className="text-sm text-navy-deep/80">
+              {roles}
+              {author?.location ? ` · ${author.location}` : ""}
+            </p>
+          ) : null}
+        </div>
+        <div className="space-y-2 text-sm leading-relaxed text-pretty text-muted-foreground">
+          {bio.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function BookDialogContent({ book }: { book: Book }) {
-  const formatLabel = book.format === "ebook" ? "E-book" : "Livro impresso";
-
-  const specs = [
-    { label: "Formato", value: formatLabel },
-    { label: "Ano", value: book.year ? String(book.year) : PLACEHOLDER },
-    { label: "Páginas", value: book.pages ? String(book.pages) : PLACEHOLDER },
-    { label: "ISBN", value: book.isbn ?? PLACEHOLDER },
-  ];
-
-  const authorBio =
-    book.authorBio ??
-    `Em breve, uma apresentação de ${book.author}: trajetória, formação e o que motivou a escrita desta obra.`;
+  const profiles = getAuthorCredits(book.author);
+  const heading = profiles.length > 1 ? "Sobre os autores" : "Sobre o autor";
 
   return (
     <DialogContent
@@ -65,7 +88,7 @@ export function BookDialogContent({ book }: { book: Book }) {
       </DialogClose>
 
       {/* Cover panel */}
-      <div className="relative flex shrink-0 items-center justify-center overflow-hidden bg-navy bg-grid-paper-light px-6 py-8 sm:py-10 lg:w-[42%] lg:px-12 lg:py-14">
+      <div className="relative flex shrink-0 items-center justify-center overflow-hidden bg-navy bg-grid-paper-light px-6 py-8 sm:py-10 lg:w-[46%] lg:px-10 lg:py-14">
         <div
           aria-hidden
           className="pointer-events-none absolute -top-24 -left-24 size-72 rounded-full bg-navy-deep/60 blur-3xl"
@@ -74,12 +97,12 @@ export function BookDialogContent({ book }: { book: Book }) {
           aria-hidden
           className="pointer-events-none absolute -right-20 -bottom-20 size-64 rounded-full bg-cream/10 blur-3xl"
         />
-        <div className="relative w-full max-w-[160px] sm:max-w-[200px] lg:max-w-[300px] xl:max-w-[320px]">
+        <div className="relative w-full max-w-[200px] sm:max-w-[240px] lg:max-w-[380px] xl:max-w-[400px]">
           <BookCover
             src={book.cover}
             alt={`Capa do livro ${book.title}`}
             priority
-            sizes="(max-width: 640px) 160px, (max-width: 1024px) 200px, 320px"
+            sizes="(max-width: 640px) 200px, (max-width: 1024px) 240px, 400px"
             className="shadow-2xl shadow-black/40 ring-cream/15"
           />
           {book.badge ? (
@@ -93,53 +116,29 @@ export function BookDialogContent({ book }: { book: Book }) {
       {/* Info panel */}
       <div className="flex min-h-0 flex-1 flex-col lg:overflow-y-auto">
         <div className="flex flex-col gap-7 p-6 sm:p-8 lg:p-10 lg:pr-14">
-          <div className="space-y-3">
-            <div className="flex flex-wrap items-center gap-2">
-              <Badge className="bg-navy text-cream">{formatLabel}</Badge>
-              {book.categories.map((category) => (
-                <Badge
-                  key={category}
-                  variant="outline"
-                  className="border-navy/25 text-navy"
-                >
-                  {categoryLabels[category] ?? category}
-                </Badge>
-              ))}
-            </div>
+          <div className="space-y-2">
             <DialogTitle className="text-2xl leading-tight font-bold tracking-tight text-balance text-navy sm:text-3xl lg:text-4xl">
               {book.title}
             </DialogTitle>
             {book.subtitle ? (
-              <p className="text-base text-pretty text-navy/70 sm:text-lg">
+              <p className="text-lg font-medium text-pretty text-navy-deep sm:text-xl">
                 {book.subtitle}
               </p>
             ) : null}
-            <p className="text-base text-muted-foreground">{book.author}</p>
           </div>
 
           <DialogDescription className="text-base leading-relaxed text-pretty text-foreground">
             {book.description}
           </DialogDescription>
 
-          <SpecList items={specs} />
-
-          <section className="space-y-3">
+          <section className="space-y-4">
             <h3 className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">
-              Sobre o autor
+              {heading}
             </h3>
-            <div className="flex gap-4">
-              <div
-                aria-hidden
-                className="flex size-12 shrink-0 items-center justify-center rounded-full bg-navy-deep text-sm font-bold text-cream"
-              >
-                {getInitials(book.author)}
-              </div>
-              <div className="space-y-1">
-                <p className="font-semibold text-navy">{book.author}</p>
-                <p className="text-sm leading-relaxed text-pretty text-muted-foreground">
-                  {authorBio}
-                </p>
-              </div>
+            <div className="space-y-6">
+              {profiles.map(({ name, author }) => (
+                <AuthorBlock key={name} name={name} author={author} />
+              ))}
             </div>
           </section>
 
