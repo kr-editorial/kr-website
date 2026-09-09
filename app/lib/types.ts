@@ -1,3 +1,23 @@
+export type Author = {
+  slug: string;
+  name: string;
+  aliases: string[];
+  roles: string[];
+  location?: string;
+  born?: {
+    date?: string;
+    year?: number;
+    place?: string;
+  };
+  family?: {
+    spouse?: string;
+    children?: string[];
+    marriedYears?: number;
+  };
+  works?: string[];
+  bio: string[];
+};
+
 export type BookFormat = "livro" | "ebook";
 
 export type Book = {

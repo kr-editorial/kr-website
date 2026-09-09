@@ -1,0 +1,179 @@
+[
+  {
+    "slug": "geremias-dos-santos",
+    "name": "Geremias dos Santos",
+    "aliases": ["Geremias dos Santos"],
+    "roles": [
+      "Educador cristão",
+      "Pastor presidente",
+      "Pós-graduado em Direitos Humanos",
+      "Acadêmico em Psicologia"
+    ],
+    "location": "Catanduvas/SC",
+    "bio": [
+      "Geremias dos Santos é educador cristão, pós-graduado em Direitos Humanos e acadêmico em Psicologia.",
+      "Atualmente, é pastor presidente das Assembleias de Deus em Catanduvas/SC. Foi secretário e coordenador do Conselho de Pastores da 8ª Região e coordenador da UMADESCP 9ª Região. É filiado à CGADB (Convenção Geral das Assembleias de Deus no Brasil) e membro da CIADESCP (Convenção das Assembleias de Deus de Santa Catarina e Sudoeste do Paraná).",
+      "É fundador e presidente da AMAZ — Associação Missionária Azuza —, do IBAZ — Instituto Bíblico Azuza — e da Organização Evangelística Geração da Colheita."
+    ]
+  },
+  {
+    "slug": "maikye-firmino",
+    "name": "Maikye Alesson Firmino da Silva",
+    "aliases": [
+      "Maikye Firmino",
+      "Maikye Allesson Firmino da Silva",
+      "Maikye Alesson Firmino da Silva Nascimento"
+    ],
+    "roles": [
+      "Presbítero",
+      "Teólogo",
+      "Pregador",
+      "Escritor",
+      "Professor de Teologia"
+    ],
+    "location": "Criciúma/SC",
+    "born": {
+      "date": "1993-02-02",
+      "place": "Passira/PE"
+    },
+    "family": {
+      "spouse": "Daniela Costa do Nascimento da Silva",
+      "children": ["Eloá Firmino do Nascimento"],
+      "marriedYears": 11
+    },
+    "bio": [
+      "Maikye Alesson Firmino da Silva Nascimento nasceu em 2 de fevereiro de 1993, na cidade de Passira (PE), filho de Luis Alberto Firmino da Silva e Eliane Maria Firmino da Silva.",
+      "Servindo ao Senhor desde a infância, iniciou sua caminhada ministerial aos 18 anos como auxiliar de trabalho. Ao longo dos anos, construiu uma sólida trajetória na obra de Deus, exercendo funções de liderança em diversos departamentos e atuando como dirigente de congregação no Campo Eclesiástico de Criciúma (SC). Atualmente, serve ao Senhor como presbítero.",
+      "É casado há 11 anos com Daniela Costa do Nascimento da Silva, com quem tem uma filha, Eloá Firmino do Nascimento. Sua família constitui parte fundamental de sua caminhada, ministério e propósito.",
+      "Teólogo, pregador da Palavra de Deus e escritor, dedica-se ao ensino das Escrituras e à formação cristã, com atuação ativa na Escola Bíblica Dominical (EBD).",
+      "No ITEC — Instituto de Educação Cristã — atua como professor de Teologia, membro do Conselho Doutrinário e responsável pelo Setor de Capacitação Docente, contribuindo diretamente para o preparo de professores e líderes.",
+      "Na área da saúde, possui 10 anos de experiência profissional, trajetória que lhe proporcionou contato direto com diferentes realidades humanas e com os desafios do cuidado integral das pessoas. Atualmente, é graduando em Enfermagem, unindo a experiência adquirida na saúde ao conhecimento teológico e ministerial.",
+      "Sua trajetória reflete o propósito de compreender e cuidar do ser humano de maneira integral, conciliando fé, ensino, liderança, saúde e cuidado.",
+      "Sua caminhada é marcada pelo compromisso com a Palavra de Deus, pela dedicação ao ensino e pelo desejo de servir pessoas, fortalecendo vidas por meio da fé, do conhecimento e do cuidado."
+    ]
+  },
+  {
+    "slug": "diego-marin",
+    "name": "Diego Marin",
+    "aliases": ["Diego Marin"],
+    "roles": ["Pregador pentecostal", "Pregador itinerante", "Escritor"],
+    "location": "Lages/SC",
+    "born": {
+      "year": 1983,
+      "place": "Lages/SC"
+    },
+    "family": {
+      "spouse": "Tatiane dos Santos Marin",
+      "children": ["Kauan Marin", "Emanuel Marin"],
+      "marriedYears": 11
+    },
+    "bio": [
+      "Pregador pentecostal, natural de Lages/SC, onde reside com sua família. Nasceu em 1983.",
+      "Casado há 11 anos com Tatiane dos Santos Marin, é pai de dois filhos, Kauan Marin e Emanuel Marin.",
+      "Converteu-se em 2010 e, desde o início de sua caminhada cristã, serve a Cristo na Assembleia de Deus, dedicando-se atualmente ao chamado itinerante confiado por Cristo.",
+      "Com formação teológica pela Assembleia de Deus, aprofundou seus estudos no bacharelado em Teologia e atualmente estuda teologia sistemática e língua hebraica, participando de escolas bíblicas de obreiros e aprofundando-se sempre nas Escrituras Sagradas.",
+      "É apaixonado pelo Deus de Israel e encontra nas Escrituras e na tradição hebraica uma fonte contínua de devoção, ensino e proclamação.",
+      "Escritor com três livros publicados, seu maior prazer é estar no altar do Senhor, anunciando com fidelidade e fervor a Palavra inspirada por Deus.",
+      "Servo, pai e pregador, Diego Marin expressa em sua vida e ministério um compromisso genuíno com a fé pentecostal e com a edificação da igreja de Cristo."
+    ]
+  },
+  {
+    "slug": "bruno-lazzaretti",
+    "name": "Bruno dos Santos Lazzaretti",
+    "aliases": ["Bruno S. Lazzaretti", "Bruno dos Santos Lazzaretti"],
+    "roles": ["Pregador itinerante", "Escritor", "Obreiro"],
+    "location": "Joinville/SC",
+    "family": {
+      "spouse": "Alana Renata Lazzaretti"
+    },
+    "works": [
+      "O Jardim do Sacrifício",
+      "Altar do Sacrifício",
+      "A Crise do Homem Interior"
+    ],
+    "bio": [
+      "Bruno dos Santos Lazzaretti é pregador itinerante, escritor e obreiro da Assembleia de Deus em Joinville (IEADJO). Casado com Alana Renata Lazzaretti, tem dedicado sua caminhada ao serviço cristão, à pregação da Palavra de Deus e ao ensino das Escrituras.",
+      "Bacharelando em Teologia pela Faculdade Refidim, Bruno desenvolve seu ministério com forte dedicação ao estudo bíblico, buscando unir profundidade teológica, contexto das Escrituras e uma mensagem acessível à igreja.",
+      "Como pregador itinerante, tem ministrado a Palavra de Deus em igrejas, congressos, campanhas e demais eventos cristãos, levando mensagens marcadas pelo chamado ao despertamento espiritual, à perseverança, ao quebrantamento e a uma vida de intimidade com Deus.",
+      "É autor de O Jardim do Sacrifício, baseada na experiência de Cristo no Getsêmani; Altar do Sacrifício, construída a partir da experiência de Abraão em Gênesis 22; e A Crise do Homem Interior, baseada em Asafe no Salmo 73. Em seus escritos, procura transformar verdades bíblicas em mensagens pastorais e devocionais que conduzam o leitor à reflexão, à entrega e ao amadurecimento espiritual.",
+      "Sua trajetória ministerial é marcada pelo desejo de servir à Igreja de Cristo e anunciar o Evangelho, tendo como propósito usar tanto o púlpito quanto a escrita para comunicar uma mensagem central: Cristo acima de tudo, a Palavra como fundamento e vidas alcançadas para a glória de Deus."
+    ]
+  },
+  {
+    "slug": "claudio-luz",
+    "name": "Claudio Luz",
+    "aliases": ["Claudio Luz", "Pastor Claudio Luz"],
+    "roles": [
+      "Pastor",
+      "Pastor itinerante",
+      "Bombeiro militar da reserva",
+      "Bacharel em Teologia",
+      "Pós-graduado em Segurança Pública e Família"
+    ],
+    "location": "São João Batista/SC",
+    "family": {
+      "spouse": "Raquel dos Santos Luz",
+      "children": ["Nathan", "Isabel"],
+      "marriedYears": 35
+    },
+    "bio": [
+      "Pastor na Igreja Evangélica Assembleia de Deus em São João Batista, Santa Catarina, e membro da CIADESCP.",
+      "Coordenou os departamentos de Família, Ensino e Jovens por mais de 15 anos e atualmente atua como pastor itinerante.",
+      "Bombeiro militar da reserva no estado de Santa Catarina, atuou por 30 anos. É bacharel em Teologia pela Kúrios e pós-graduado em Segurança Pública e Família pela Avantis.",
+      "Casado há 35 anos com Raquel dos Santos Luz, pai de Nathan e Isabel, sogro de Alexandra e Marcos, avô de Benjamin e Samuel."
+    ]
+  },
+  {
+    "slug": "luiz-goncalves-neto",
+    "name": "Luiz Gonçalves Neto",
+    "aliases": ["Luiz Gonçalves Neto", "Luiz Gonçalves"],
+    "roles": [
+      "Pregador do Evangelho",
+      "Escritor",
+      "Estudante de Teologia",
+      "Palestrante para casais"
+    ],
+    "family": {
+      "spouse": "Luana Gonçalves",
+      "children": ["Alana Rebeca Gonçalves"],
+      "marriedYears": 9
+    },
+    "bio": [
+      "Luiz Gonçalves Neto é pregador do Evangelho, escritor e estudante de bacharelado em Teologia pelo Instituto Renascer. Há 9 anos dedica-se à pregação da Palavra de Deus, buscando levar uma mensagem de fé, esperança, transformação e propósito para pessoas e famílias.",
+      "Sua trajetória é marcada pelo desejo de servir a Deus e contribuir para o crescimento espiritual de outras pessoas. Por meio da pregação, do ensino e da escrita, procura transformar experiências e aprendizados em mensagens que possam alcançar diferentes vidas.",
+      "Mais do que títulos ou funções, Luiz entende sua trajetória como um chamado para servir. Sua missão é anunciar o Evangelho, fortalecer famílias, inspirar pessoas a não desistirem diante das dificuldades e mostrar, por meio da Palavra de Deus, que é possível recomeçar, vencer desafios e viver um propósito maior.",
+      "Casado com Luana Gonçalves há 9 anos e pai de Alana Rebeca Gonçalves, de 7 anos, Luiz também atua ao lado de sua esposa como professor do curso Lar Feliz e como palestrante para casais. Juntos, trabalham há mais de 9 anos com famílias, relacionamentos e liderança de jovens."
+    ]
+  },
+  {
+    "slug": "natanael-rodrigo",
+    "name": "Natanael Rodrigo Pereira Lopes",
+    "aliases": [
+      "Nataniel Rodrigo",
+      "Natanael Rodrigo",
+      "Natanel Rodrigo Pereira Lopes"
+    ],
+    "roles": ["Ministro do Evangelho", "Bacharel em Teologia"],
+    "bio": [
+      "Natanael Rodrigo Pereira Lopes é ministro do Evangelho há seis anos e bacharel em Teologia pela Academia dos Pregadores.",
+      "Dedicado ao ensino e ao estudo da Palavra de Deus, tem como propósito anunciar o Evangelho com simplicidade, verdade e amor, buscando alcançar vidas e ganhar almas para Cristo através da pregação, do ensino e da dedicação à obra do Senhor.",
+      "Seu desejo é que cada mensagem compartilhada seja instrumento de fé, esperança e transformação espiritual."
+    ]
+  },
+  {
+    "slug": "mikael-calixto",
+    "name": "Mikael Calixto da Silva",
+    "aliases": ["Mikael Calixto da Silva"],
+    "roles": ["Pregador itinerante", "Diácono", "Escritor"],
+    "location": "Campina Grande/PB",
+    "family": {
+      "spouse": "Jéssica Oliveira"
+    },
+    "works": ["José, um Ramo Frutífero"],
+    "bio": [
+      "Mikael Calixto da Silva é pregador itinerante, diácono e escritor, natural de Campina Grande/PB. É casado com a cantora Jéssica Oliveira.",
+      "Autor de José, um Ramo Frutífero, devocional que nasceu de seus estudos sobre a vida de José e de uma profunda identificação com sua trajetória. A obra busca levar a Igreja a uma vida mais profunda com Deus, mostrando que José floresceu e teve êxito porque permaneceu junto à Fonte, o Deus de Jacó. Assim como Cristo, seu ministério foi relevante porque nunca esteve distante do Pai.",
+      "Sua missão é anunciar uma Palavra que confronta, consola e edifica, crendo que “a voz do pregador acaba, mas a do Espírito Santo continua.”"
+    ]
+  }
+]
