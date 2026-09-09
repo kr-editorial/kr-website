@@ -26,8 +26,8 @@ export function AudienceSection() {
         <SectionHeading
           tone="dark"
           pill="Para quem trabalhamos"
-          title="Cada autor tem uma história. Nós ajudamos a contá-la."
-          subtitle="Atendemos autores, acadêmicos, pastores, pesquisadores e instituições em todo o Brasil."
+          title="Ajudamos a dar vida à sua mensagem!"
+          subtitle="Pregadores, Pastores, Acadêmicos, Pesquisadores, Teólogos e Denominações em todo o Brasil"
         />
         <ul className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
           {site.audiences.map((audience) => {

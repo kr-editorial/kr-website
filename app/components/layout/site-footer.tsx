@@ -19,8 +19,7 @@ export function SiteFooter() {
         <div className="space-y-4">
           <Logo variant="light" size="md" />
           <p className="max-w-xs text-sm leading-relaxed text-cream/70">
-            Do rascunho à publicação: editoração, diagramação, revisão textual
-            e normalização com qualidade editorial.
+            Do rascunho à publicação, cuidamos de cada etapa com zelo, excelência e propósito.
           </p>
           <TripleStripe orientation="horizontal" className="opacity-60" />
         </div>
