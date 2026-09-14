@@ -27,6 +27,19 @@ As capas dos livros em `public/covers/` são placeholders gerados por
 `scripts/generate-covers.mjs`; substitua pelos arquivos reais (proporção 2:3,
 ex.: 600×900) mantendo o caminho referenciado em `books.json`.
 
+## Testes
+
+```bash
+npm test              # executa a suíte uma vez
+npm run test:watch    # executa novamente ao editar arquivos
+```
+
+Vitest e React Testing Library cobrem os helpers de catálogo e autoria,
+a abertura e o fechamento dos detalhes dos livros e a navegação móvel.
+Os testes usam dados de exemplo em `tests/fixtures.ts` para não depender de
+alterações editoriais no catálogo. O fluxo de solicitação de orçamento ainda
+não tem testes, pois está em desenvolvimento.
+
 ## Variáveis de ambiente
 
 Copie `.env.example` para `.env.local` e preencha:
