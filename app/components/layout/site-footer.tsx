@@ -94,21 +94,22 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-cream/10">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-cream/60 sm:flex-row sm:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-cream/60 sm:flex-row sm:px-6">
           <p>
             © {new Date().getFullYear()} {site.name} — {site.tagline}. Todos os
-            direitos reservados.{" "}
+            direitos reservados.
+          </p>
+          <nav aria-label="Informações legais" className="flex items-center gap-3">
             <Link href="/termos" className="transition-colors hover:text-cream hover:underline">
               Termos de Uso
             </Link>
-            {" · "}
+            <span aria-hidden className="text-cream/30">
+              ·
+            </span>
             <Link href="/privacidade" className="transition-colors hover:text-cream hover:underline">
               Política de Privacidade
             </Link>
-          </p>
-          <p>
-            {site.founders.map((founder) => founder.name).join(" · ")}
-          </p>
+          </nav>
         </div>
       </div>
     </footer>

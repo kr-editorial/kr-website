@@ -30,5 +30,6 @@ describe("SiteFooter contact", () => {
       "href",
       "/privacidade",
     );
+    expect(screen.queryByText(site.founders[0]!.name)).not.toBeInTheDocument();
   });
 });
