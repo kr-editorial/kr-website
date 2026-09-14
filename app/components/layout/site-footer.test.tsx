@@ -22,4 +22,13 @@ describe("SiteFooter contact", () => {
     );
     expect(contact).not.toHaveTextContent(site.contact.city);
   });
+
+  it("links the legal pages from the footer bar", () => {
+    render(<SiteFooter />);
+    expect(screen.getByRole("link", { name: "Termos de Uso" })).toHaveAttribute("href", "/termos");
+    expect(screen.getByRole("link", { name: "Política de Privacidade" })).toHaveAttribute(
+      "href",
+      "/privacidade",
+    );
+  });
 });

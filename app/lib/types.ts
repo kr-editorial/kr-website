@@ -75,6 +75,23 @@ export type AboutContent = {
   tagline: string;
 };
 
+export type LegalSection = {
+  heading: string;
+  paragraphs: string[];
+};
+
+export type LegalPage = {
+  title: string;
+  lede: string;
+  description: string;
+  sections: LegalSection[];
+};
+
+export type LegalContent = {
+  terms: LegalPage;
+  privacy: LegalPage;
+};
+
 export type SiteContent = {
   name: string;
   tagline: string;

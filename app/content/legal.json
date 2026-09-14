@@ -1,0 +1,108 @@
+{
+  "terms": {
+    "title": "Termos de Uso",
+    "lede": "Estas são as condições gerais para o uso deste site.",
+    "description": "Condições gerais de uso do site da KR Editorial.",
+    "sections": [
+      {
+        "heading": "Aceitação",
+        "paragraphs": [
+          "Ao acessar e utilizar este site, você concorda com estes Termos de Uso. Se não concordar com alguma parte, recomendamos que não continue a navegação."
+        ]
+      },
+      {
+        "heading": "Conteúdo e propriedade",
+        "paragraphs": [
+          "O conteúdo publicado neste site tem caráter informativo e destina-se a apresentar a editora, seus serviços e suas obras.",
+          "Textos, imagens, marcas e demais materiais aqui apresentados pertencem à editora ou a quem lhes tenha cedido o direito de uso, e não devem ser copiados ou utilizados sem autorização, salvo quando a lei permitir."
+        ]
+      },
+      {
+        "heading": "Serviços e orçamentos",
+        "paragraphs": [
+          "As informações sobre serviços têm finalidade descritiva. Pedidos de orçamento e demais contatos não geram compromisso até que as partes acordem os termos do trabalho."
+        ]
+      },
+      {
+        "heading": "Responsabilidade",
+        "paragraphs": [
+          "Empenhamo-nos em manter o site disponível e o conteúdo atualizado, mas não podemos garantir que todas as informações estejam sempre completas, isentas de erros ou disponíveis sem interrupção.",
+          "O uso das informações encontradas aqui é de responsabilidade de cada visitante."
+        ]
+      },
+      {
+        "heading": "Links externos",
+        "paragraphs": [
+          "Este site pode conter links para páginas de terceiros. Não controlamos esses destinos e não nos responsabilizamos pelo conteúdo, pelas práticas ou pelas políticas neles adotadas."
+        ]
+      },
+      {
+        "heading": "Legislação",
+        "paragraphs": [
+          "Estes termos são regidos pela legislação brasileira."
+        ]
+      },
+      {
+        "heading": "Alterações",
+        "paragraphs": [
+          "Estes Termos de Uso podem ser atualizados a qualquer momento. A versão vigente é a publicada nesta página."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "lede": "Esta página descreve, de forma geral, como tratamos informações neste site.",
+    "description": "Política de privacidade do site da KR Editorial.",
+    "sections": [
+      {
+        "heading": "Sobre esta política",
+        "paragraphs": [
+          "Respeitamos a privacidade de quem visita este site. Esta página explica, em linhas gerais, como as informações podem ser tratadas."
+        ]
+      },
+      {
+        "heading": "Informações que você envia",
+        "paragraphs": [
+          "Podemos receber dados que você nos envia por conta própria, como ao preencher um formulário ou ao entrar em contato pelos canais disponíveis no site."
+        ]
+      },
+      {
+        "heading": "Como usamos essas informações",
+        "paragraphs": [
+          "Utilizamos as informações recebidas para responder às solicitações, prestar o atendimento pedido e manter o funcionamento do site."
+        ]
+      },
+      {
+        "heading": "Compartilhamento",
+        "paragraphs": [
+          "Não vendemos as informações recebidas. Elas podem ser tratadas por prestadores necessários à operação do site e do atendimento, sempre no limite do que for preciso para essas finalidades."
+        ]
+      },
+      {
+        "heading": "Seus pedidos",
+        "paragraphs": [
+          "Você pode solicitar informações sobre os dados que nos enviou, bem como a correção ou a exclusão, pelos canais de contato indicados neste site."
+        ]
+      },
+      {
+        "heading": "Cookies",
+        "paragraphs": [
+          "Este site pode utilizar cookies e recursos semelhantes apenas na medida necessária para o seu funcionamento."
+        ]
+      },
+      {
+        "heading": "Alterações",
+        "paragraphs": [
+          "Esta Política de Privacidade pode ser atualizada a qualquer momento. A versão vigente é a publicada nesta página."
+        ]
+      },
+      {
+        "heading": "Contato",
+        "paragraphs": [
+          "Dúvidas sobre esta política podem ser enviadas pelos canais de contato disponíveis no site."
+        ]
+      }
+    ]
+  }
+}

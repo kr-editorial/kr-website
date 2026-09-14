@@ -1,10 +1,13 @@
 import authorsData from "@/content/authors.json";
 import booksData from "@/content/books.json";
+import legalData from "@/content/legal.json";
 import servicesData from "@/content/services.json";
 import siteData from "@/content/site.json";
-import type { Author, Book, Service, SiteContent } from "@/lib/types";
+import type { Author, Book, LegalContent, Service, SiteContent } from "@/lib/types";
 
 export const site = siteData as SiteContent;
+
+export const legal = legalData as LegalContent;
 
 export const services = servicesData as Service[];
 
