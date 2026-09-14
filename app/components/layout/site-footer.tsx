@@ -1,8 +1,14 @@
 import Link from "next/link";
-import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import { Logo } from "@/components/brand/logo";
 import { TripleStripe } from "@/components/brand/triple-stripe";
+import { WhatsAppIcon } from "@/components/brand/whatsapp-icon";
 import { site } from "@/lib/content";
+
+function instagramHandle(url: string) {
+  const handle = new URL(url).pathname.replaceAll("/", "");
+  return handle ? `@${handle}` : url;
+}
 
 const footerLinks = [
   { label: "Início", href: "/" },
@@ -56,26 +62,34 @@ export function SiteFooter() {
                 {site.contact.email}
               </a>
             </li>
-            <li className="inline-flex items-center gap-2.5">
-              <Phone className="size-4 shrink-0" />
-              {site.contact.phone}
-            </li>
-            <li className="inline-flex items-center gap-2.5">
-              <MapPin className="size-4 shrink-0" />
-              {site.contact.city}
-            </li>
+            {site.contact.whatsapp ? (
+              <li>
+                <a
+                  href={site.contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`WhatsApp ${site.contact.phone}`}
+                  className="inline-flex items-center gap-2.5 transition-colors hover:text-cream"
+                >
+                  <WhatsAppIcon className="size-4 shrink-0" />
+                  {site.contact.phone}
+                </a>
+              </li>
+            ) : null}
+            {site.contact.instagram ? (
+              <li>
+                <a
+                  href={site.contact.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2.5 transition-colors hover:text-cream"
+                >
+                  <Instagram className="size-4 shrink-0" />
+                  {instagramHandle(site.contact.instagram)}
+                </a>
+              </li>
+            ) : null}
           </ul>
-          {site.contact.instagram ? (
-            <a
-              href={site.contact.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram da KR Editorial"
-              className="inline-flex size-9 items-center justify-center rounded-full bg-cream/10 text-cream transition-colors hover:bg-cream/20"
-            >
-              <Instagram className="size-4" />
-            </a>
-          ) : null}
         </div>
       </div>
 
