@@ -1,16 +1,43 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import { AuthorAvatar } from "@/components/brand/author-avatar";
 import { BookCover } from "@/components/brand/book-cover";
 import { BookDialogContent } from "@/components/brand/book-dialog";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import { getAuthorCredits } from "@/lib/content";
 import type { Book } from "@/lib/types";
 
 const badgeLabels: Record<NonNullable<Book["badge"]>, string> = {
   lançamento: "Lançamento",
   novo: "Novo",
 };
+
+function AuthorCredit({ author }: { author: string }) {
+  const portraits = getAuthorCredits(author).filter((credit) => credit.author?.image);
+
+  if (!portraits.length) {
+    return <span className="text-sm text-muted-foreground">{author}</span>;
+  }
+
+  return (
+    <span className="flex items-center gap-2 text-sm text-muted-foreground">
+      <span className="flex shrink-0 -space-x-1.5">
+        {portraits.map(({ name, author: profile }) => (
+          <AuthorAvatar
+            key={name}
+            name={name}
+            author={profile}
+            sizes="48px"
+            className="size-6 ring-2 ring-cream"
+          />
+        ))}
+      </span>
+      <span className="min-w-0">{author}</span>
+    </span>
+  );
+}
 
 export function BookCard({ book }: { book: Book }) {
   return (
@@ -37,7 +64,7 @@ export function BookCard({ book }: { book: Book }) {
               {book.subtitle}
             </span>
           ) : null}
-          <span className="text-sm text-muted-foreground">{book.author}</span>
+          <AuthorCredit author={book.author} />
           <span className="mt-1 inline-flex items-center gap-1 text-sm font-medium text-navy-deep opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
             Saiba mais
             <ArrowRight className="size-3.5" />

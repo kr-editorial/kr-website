@@ -5,6 +5,8 @@ export const authors: Author[] = [
     slug: "jose-silva",
     name: "José Silva",
     aliases: ["J. Silva"],
+    image: "/authors/jose-silva.webp",
+    imagePosition: "50% 20%",
     roles: ["Escritor", "Professor", "Editor"],
     location: "Curitiba/PR",
     bio: ["José escreve sobre literatura.", "Também ensina escrita."],

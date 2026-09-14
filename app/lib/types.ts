@@ -2,6 +2,8 @@ export type Author = {
   slug: string;
   name: string;
   aliases: string[];
+  image?: string;
+  imagePosition?: string;
   roles: string[];
   location?: string;
   born?: {

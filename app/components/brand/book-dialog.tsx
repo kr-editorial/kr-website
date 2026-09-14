@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight, XIcon } from "lucide-react";
+import { AuthorAvatar } from "@/components/brand/author-avatar";
 import { BookCover } from "@/components/brand/book-cover";
 import { CtaButton } from "@/components/brand/cta-button";
 import { Badge } from "@/components/ui/badge";
@@ -19,26 +20,12 @@ const badgeLabels: Record<NonNullable<Book["badge"]>, string> = {
   novo: "Novo",
 };
 
-function getInitials(name: string) {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0]?.toUpperCase())
-    .join("");
-}
-
 function AuthorBlock({ name, author }: { name: string; author?: Author }) {
   const roles = author?.roles.slice(0, 2).join(" · ");
 
   return (
     <div className="flex gap-4">
-      <div
-        aria-hidden
-        className="flex size-12 shrink-0 items-center justify-center rounded-full bg-navy-deep text-sm font-bold text-cream"
-      >
-        {getInitials(name)}
-      </div>
+      <AuthorAvatar name={name} author={author} />
       <div className="min-w-0 space-y-2">
         <div>
           <p className="font-semibold text-navy">{name}</p>

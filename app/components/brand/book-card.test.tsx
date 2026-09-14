@@ -24,6 +24,7 @@ describe("book details", () => {
     expect(dialog.getByRole("img", { name: `Capa do livro ${book.title}` })).toBeVisible();
     expect(dialog.getByRole("heading", { name: "Sobre o autor" })).toBeVisible();
     expect(dialog.getByText("José Silva")).toBeVisible();
+    expect(dialog.getAllByRole("img", { name: "Retrato de José Silva" }).length).toBeGreaterThan(0);
     expect(dialog.getByText("Escritor · Professor · Curitiba/PR")).toBeVisible();
     expect(dialog.getByText("José escreve sobre literatura.")).toBeVisible();
     expect(dialog.getByText("Também ensina escrita.")).toBeVisible();
@@ -56,6 +57,8 @@ describe("book details", () => {
     expect(dialog.getByRole("heading", { name: "Sobre os autores" })).toBeVisible();
     expect(dialog.getByText("José Silva")).toBeVisible();
     expect(dialog.getByText("Autor convidado")).toBeVisible();
+    expect(dialog.getByRole("img", { name: "Retrato de José Silva" })).toBeVisible();
+    expect(dialog.queryByRole("img", { name: "Retrato de Autor convidado" })).not.toBeInTheDocument();
   });
 
   it("shows a book when its author has no biography or roles", async () => {
@@ -68,5 +71,18 @@ describe("book details", () => {
     expect(dialog.getByText("Ana Costa")).toBeVisible();
     expect(dialog.getByText(book.description)).toBeVisible();
     expect(dialog.getByRole("heading", { name: "Sobre o autor" })).toBeVisible();
+    expect(dialog.queryByRole("img", { name: "Retrato de Ana Costa" })).not.toBeInTheDocument();
+  });
+
+  it("shows an author avatar on the card when a portrait exists", () => {
+    render(<BookCard book={makeBook()} />);
+    expect(screen.getByRole("img", { name: "Retrato de José Silva" })).toBeVisible();
+    expect(screen.getByText("J. Silva")).toBeVisible();
+  });
+
+  it("keeps the author credit as text when nobody has a portrait", () => {
+    render(<BookCard book={makeBook({ author: "Ana Costa" })} />);
+    expect(screen.getByText("Ana Costa")).toBeVisible();
+    expect(screen.queryByRole("img", { name: "Retrato de Ana Costa" })).not.toBeInTheDocument();
   });
 });

@@ -3,6 +3,8 @@
     "slug": "geremias-dos-santos",
     "name": "Geremias dos Santos",
     "aliases": ["Geremias dos Santos"],
+    "image": "/authors/geremias-dos-santos.webp",
+    "imagePosition": "50% 22%",
     "roles": [
       "Educador cristão",
       "Pastor presidente",
@@ -24,6 +26,8 @@
       "Maikye Allesson Firmino da Silva",
       "Maikye Alesson Firmino da Silva Nascimento"
     ],
+    "image": "/authors/maikye-firmino.webp",
+    "imagePosition": "35% 22%",
     "roles": [
       "Presbítero",
       "Teólogo",
@@ -56,6 +60,8 @@
     "slug": "diego-marin",
     "name": "Diego Marin",
     "aliases": ["Diego Marin"],
+    "image": "/authors/diego-marin.webp",
+    "imagePosition": "50% 20%",
     "roles": ["Pregador pentecostal", "Pregador itinerante", "Escritor"],
     "location": "Lages/SC",
     "born": {
@@ -81,6 +87,8 @@
     "slug": "bruno-lazzaretti",
     "name": "Bruno dos Santos Lazzaretti",
     "aliases": ["Bruno S. Lazzaretti", "Bruno dos Santos Lazzaretti"],
+    "image": "/authors/bruno-lazzaretti.webp",
+    "imagePosition": "50% 20%",
     "roles": ["Pregador itinerante", "Escritor", "Obreiro"],
     "location": "Joinville/SC",
     "family": {
@@ -127,6 +135,8 @@
     "slug": "luiz-goncalves-neto",
     "name": "Luiz Gonçalves Neto",
     "aliases": ["Luiz Gonçalves Neto", "Luiz Gonçalves"],
+    "image": "/authors/luiz-goncalves.webp",
+    "imagePosition": "50% 16%",
     "roles": [
       "Pregador do Evangelho",
       "Escritor",
@@ -163,7 +173,9 @@
   {
     "slug": "mikael-calixto",
     "name": "Mikael Calixto da Silva",
-    "aliases": ["Mikael Calixto da Silva"],
+    "aliases": ["Mikael Calixto da Silva", "Makael Kalixto"],
+    "image": "/authors/makael-kalixto.webp",
+    "imagePosition": "48% 16%",
     "roles": ["Pregador itinerante", "Diácono", "Escritor"],
     "location": "Campina Grande/PB",
     "family": {
@@ -175,5 +187,32 @@
       "Autor de José, um Ramo Frutífero, devocional que nasceu de seus estudos sobre a vida de José e de uma profunda identificação com sua trajetória. A obra busca levar a Igreja a uma vida mais profunda com Deus, mostrando que José floresceu e teve êxito porque permaneceu junto à Fonte, o Deus de Jacó. Assim como Cristo, seu ministério foi relevante porque nunca esteve distante do Pai.",
       "Sua missão é anunciar uma Palavra que confronta, consola e edifica, crendo que “a voz do pregador acaba, mas a do Espírito Santo continua.”"
     ]
+  },
+  {
+    "slug": "gadyel-espindola",
+    "name": "Gadyel Espindola",
+    "aliases": ["Gadyel Espindola"],
+    "image": "/authors/gadyel.webp",
+    "imagePosition": "28% 20%",
+    "roles": [],
+    "bio": []
+  },
+  {
+    "slug": "danilo-uchoa",
+    "name": "Danilo Uchoa",
+    "aliases": ["Danilo Uchoa"],
+    "image": "/authors/danilo.webp",
+    "imagePosition": "55% 16%",
+    "roles": [],
+    "bio": []
+  },
+  {
+    "slug": "daniel-steinhauser",
+    "name": "Daniel Steinhauser",
+    "aliases": ["Daniel Steinhauser"],
+    "image": "/authors/daniel-steinhauser.webp",
+    "imagePosition": "50% 18%",
+    "roles": [],
+    "bio": []
   }
 ]
