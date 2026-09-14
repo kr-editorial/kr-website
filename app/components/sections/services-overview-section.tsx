@@ -13,8 +13,8 @@ export function ServicesOverviewSection() {
           <SectionHeading
             align="left"
             pill="Serviço editorial completo"
-            title="Tudo o que sua obra precisa para ser publicada"
-            subtitle="Da preparação do original à arte final, cuidamos de cada etapa com excelência técnica e respeito à identidade do autor."
+            title="Editoração, diagramação e publicação"
+            subtitle="Cuidamos de cada etapa com excelência técnica e respeito à identidade do autor."
           />
           <CtaButton href="/servicos" variant="outline">
             Conheça todos os serviços

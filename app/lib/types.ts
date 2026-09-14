@@ -81,6 +81,7 @@ export type SiteContent = {
   about: AboutContent;
   mission: string;
   heroHeadline: string;
+  heroSubtitle: string;
   heroCta: string;
   valueProps: string[];
   audiences: string[];

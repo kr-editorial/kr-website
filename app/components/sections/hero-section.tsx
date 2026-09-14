@@ -18,7 +18,7 @@ export function HeroSection() {
             {site.heroHeadline}
           </h1>
           <p className="max-w-xl text-lg text-pretty text-cream/80 sm:text-xl">
-            {site.heroCta}
+            {site.heroSubtitle}
           </p>
           <div className="mt-2 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
             <CtaButton href="/contato" variant="inverted" size="lg">
