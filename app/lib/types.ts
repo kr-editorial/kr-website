@@ -61,6 +61,8 @@ export type Founder = {
 };
 
 export type AboutContent = {
+  photo: string;
+  photoAlt: string;
   intro: string;
   rodrigo: string[];
   karine: string[];
