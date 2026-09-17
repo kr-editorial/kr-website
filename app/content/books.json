@@ -76,6 +76,18 @@
     "relatedSlugs": ["a-nova-alianca", "as-bodas-do-cordeiro"]
   },
   {
+    "slug": "conselhos-para-a-eternidade",
+    "title": "Conselhos para a Eternidade",
+    "author": "Pr. Edson Silva",
+    "cover": "/covers/conselhos-para-a-eternidade.webp",
+    "format": "livro",
+    "categories": ["religioso"],
+    "excerpt": "Uma bússola pastoral para quem deseja viver hoje com o olhar posto na eternidade.",
+    "description": "Conselhos para a Eternidade, de Pr. Edson Silva, aponta o caminho da Palavra como orientação para a vida. Com a Bíblia aberta e o rumo marcado, a obra oferece conselhos para quem quer caminhar com direção, fé e propósito até o encontro com Deus.",
+    "featured": false,
+    "relatedSlugs": ["relatos-missionarios", "da-rede-ao-reino"]
+  },
+  {
     "slug": "da-rede-ao-reino",
     "title": "Da Rede ao Reino",
     "subtitle": "Um chamado, uma resposta, um propósito eterno",
@@ -163,6 +175,18 @@
     "description": "O Deus que Não Quebra Princípios, de Nataniel Rodrigo, afirma a fidelidade do caráter de Deus. Diante de um tempo de conveniências, a obra recorda que o Senhor não se desdiz — e que seus princípios permanecem.",
     "featured": false,
     "relatedSlugs": ["a-nova-alianca", "cristo-o-verbo-encarnado"]
+  },
+  {
+    "slug": "o-jardim-do-sacrificio",
+    "title": "O Jardim do Sacrifício",
+    "author": "Bruno S. Lazzaretti",
+    "cover": "/covers/o-jardim-do-sacrificio.webp",
+    "format": "livro",
+    "categories": ["religioso"],
+    "excerpt": "Uma meditação sobre Getsêmani: o jardim onde o sacrifício de Cristo se tornou decisão.",
+    "description": "O Jardim do Sacrifício, de Bruno S. Lazzaretti, nasce da experiência de Cristo no Getsêmani. A obra convida o leitor a entrar naquela noite de oração, suor e entrega — e a compreender o sacrifício não só como doutrina, mas como caminho de quebrantamento e obediência.",
+    "featured": false,
+    "relatedSlugs": ["a-crise-do-homem-interior", "entre-a-cruz-e-a-decisao"]
   },
   {
     "slug": "o-legado-de-neemias",

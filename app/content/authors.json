@@ -113,6 +113,8 @@
       "Rodrigo S. Lazzaretti",
       "Rodrigo dos Santos Lazzaretti"
     ],
+    "image": "/authors/rodrigo-lazzaretti.webp",
+    "imagePosition": "40% 18%",
     "roles": ["Pregador", "Teólogo", "Escritor", "Graduando em Letras"],
     "location": "Joinville/SC",
     "family": {
@@ -279,6 +281,30 @@
       "Daniel é pai de seis filhos: Luís Henrique, Ana Beatriz, Paulo Ricardo, Maria Vitória, Marcelo e Valentina.",
       "Sua caminhada também é marcada pela fé e pelo serviço cristão. Congrega na Igreja Batista Shalon, onde, juntamente com sua esposa, exerce o ministério de líder de célula, servindo, cuidando de pessoas e contribuindo para o crescimento espiritual da igreja.",
       "Sua história é construída sobre os pilares da família, trabalho, empreendedorismo, fé e serviço, procurando colocar seus dons e experiências a serviço de Deus e das pessoas."
+    ]
+  },
+  {
+    "slug": "edson-jose-da-silva",
+    "name": "Edson José da Silva",
+    "aliases": [
+      "Pr. Edson José da Silva",
+      "Pr. Edson Silva",
+      "Edson Silva",
+      "Edson José da Silva"
+    ],
+    "image": "/authors/edson-jose-da-silva.webp",
+    "imagePosition": "50% 18%",
+    "roles": ["Pastor Presidente Executivo"],
+    "location": "Caruaru/PE",
+    "family": {
+      "spouse": "Elaine Cristina",
+      "children": ["Miquéias", "Ellen"]
+    },
+    "works": ["Conselhos para a Eternidade"],
+    "bio": [
+      "Pr. Edson José da Silva é casado com a Missionária Elaine Cristina e pai de dois filhos, Miquéias e Ellen.",
+      "É Pastor Presidente Executivo da Assembleia de Deus do campo ADBRÁS Piracicaba, em Caruaru.",
+      "Formado em Capelania, Missiologia e Médio em Teologia, atualmente está cursando Administração."
     ]
   }
 ]
