@@ -6,16 +6,16 @@
     "image": "/authors/geremias-dos-santos.webp",
     "imagePosition": "50% 22%",
     "roles": [
-      "Educador cristão",
-      "Pastor presidente",
-      "Pós-graduado em Direitos Humanos",
+      "Educador Cristão",
+      "Pastor Presidente",
+      "Pós-Graduado em Direitos Humanos",
       "Acadêmico em Psicologia"
     ],
     "location": "Catanduvas/SC",
     "bio": [
-      "Geremias dos Santos é educador cristão, pós-graduado em Direitos Humanos e acadêmico em Psicologia.",
-      "Atualmente, é pastor presidente das Assembleias de Deus em Catanduvas/SC. Foi secretário e coordenador do Conselho de Pastores da 8ª Região e coordenador da UMADESCP 9ª Região. É filiado à CGADB (Convenção Geral das Assembleias de Deus no Brasil) e membro da CIADESCP (Convenção das Assembleias de Deus de Santa Catarina e Sudoeste do Paraná).",
-      "É fundador e presidente da AMAZ — Associação Missionária Azuza —, do IBAZ — Instituto Bíblico Azuza — e da Organização Evangelística Geração da Colheita."
+      "Geremias dos Santos é Educador Cristão, Pós-Graduado em Direitos Humanos e acadêmico em Psicologia.",
+      "Atualmente, é Pastor Presidente das Assembleias de Deus em Catanduvas/SC. Foi secretário e Coordenador do Conselho de Pastores da 8ª Região e Coordenador da UMADESCP 9ª Região. É filiado à CGADB (Convenção Geral das Assembleias de Deus no Brasil) e membro da CIADESCP (Convenção das Assembleias de Deus de Santa Catarina e Sudoeste do Paraná).",
+      "É fundador e presidente da AMAZ (Associação Missionária Azuza), do IBAZ (Instituto Bíblico Azuza) e da Organização Evangelística Geração da Colheita."
     ]
   },
   {
@@ -100,11 +100,42 @@
       "A Crise do Homem Interior"
     ],
     "bio": [
-      "Bruno dos Santos Lazzaretti é pregador itinerante, escritor e obreiro da Assembleia de Deus em Joinville (IEADJO). Casado com Alana Renata Lazzaretti, tem dedicado sua caminhada ao serviço cristão, à pregação da Palavra de Deus e ao ensino das Escrituras.",
-      "Bacharelando em Teologia pela Faculdade Refidim, Bruno desenvolve seu ministério com forte dedicação ao estudo bíblico, buscando unir profundidade teológica, contexto das Escrituras e uma mensagem acessível à igreja.",
+      "Bruno dos Santos Lazzaretti é casado com Alana Renata Lazzaretti",
+      "Bruno dos Santos Lazzaretti é Pregador itinerante, Escritor e obreiro da Assembleia de Deus em Joinville (IEADJO), e tem dedicado sua caminhada ao serviço cristão, à pregação da Palavra de Deus e ao ensino das Escrituras.",
+      "Bacharelando em Teologia pela Faculdade Refidim em Joinville/SC, Bruno desenvolve seu ministério com forte dedicação ao estudo bíblico, buscando unir profundidade teológica, contexto das Escrituras e uma mensagem acessível à igreja.",
       "Como pregador itinerante, tem ministrado a Palavra de Deus em igrejas, congressos, campanhas e demais eventos cristãos, levando mensagens marcadas pelo chamado ao despertamento espiritual, à perseverança, ao quebrantamento e a uma vida de intimidade com Deus.",
-      "É autor de O Jardim do Sacrifício, baseada na experiência de Cristo no Getsêmani; Altar do Sacrifício, construída a partir da experiência de Abraão em Gênesis 22; e A Crise do Homem Interior, baseada em Asafe no Salmo 73. Em seus escritos, procura transformar verdades bíblicas em mensagens pastorais e devocionais que conduzam o leitor à reflexão, à entrega e ao amadurecimento espiritual.",
+      "Autor das obras “O Jardim do Sacrifício”, “Altar do Sacrifício” e “A Crise do Homem Interior”. Em seus escritos, procura transformar verdades bíblicas em mensagens pastorais e devocionais que conduzam o leitor à reflexão, à entrega e ao amadurecimento espiritual.",
       "Sua trajetória ministerial é marcada pelo desejo de servir à Igreja de Cristo e anunciar o Evangelho, tendo como propósito usar tanto o púlpito quanto a escrita para comunicar uma mensagem central: Cristo acima de tudo, a Palavra como fundamento e vidas alcançadas para a glória de Deus."
+    ]
+  },
+  {
+    "slug": "rodrigo-lazzaretti",
+    "name": "Rodrigo dos Santos Lazzaretti",
+    "aliases": [
+      "Rodrigo Lazzaretti",
+      "Rodrigo S. Lazzaretti",
+      "Rodrigo dos Santos Lazzaretti"
+    ],
+    "roles": ["Pregador", "Teólogo", "Escritor", "Graduando em Letras"],
+    "location": "Joinville/SC",
+    "family": {
+      "spouse": "Karine Z. Lazzaretti"
+    },
+    "works": [
+      "Desmistificando a Antropologia",
+      "O Deus Daqueles que Fracassam",
+      "Ortodoxia Pentecostal",
+      "A Lógica da Serpente",
+      "As Bodas do Cordeiro",
+      "Entre a Cruz e a Decisão: Eleição, Predestinação e Livre Arbítrio"
+    ],
+    "bio": [
+      "Rodrigo dos Santos Lazzaretti é casado com Karine Z. Lazzaretti",
+      "Rodrigo é Bacharelado em Teologia pela Faculdade Refidim em Joinville/SC, com formação em Teologia Pentecostal, Básicos e Médio em Teologia, além de especializações em Hebraico Bíblico e Grego Bíblico.",
+      "Rodrigo é Pós-Graduado em História e Teologia do Novo Testamento pela Faculdade FABAD em Pindamonhangaba/SP e conta com diversos outros cursos e especializações na área teológica.",
+      "Rodrigo também é Graduando em Letras - Língua Portuguesa",
+      "Pregador e Teólogo, Rodrigo também é autor dos livros “Desmistificando a Antropologia”, “O Deus Daqueles que Fracassam”, “Ortodoxia Pentecostal”, “A Lógica da Serpente”, “As Bodas do Cordeiro” e “Entre a Cruz e a Decisão: Eleição, Predestinação e Livre Arbítrio”",
+      "Seu ofício ministerial é marcado pela integridade, buscando sempre a aplicação prática da Teologia e uma reflexão profunda sobre a Fé, com ênfase no conhecimento bíblico e na vida cristã."
     ]
   },
   {
@@ -173,7 +204,7 @@
   {
     "slug": "mikael-calixto",
     "name": "Mikael Calixto da Silva",
-    "aliases": ["Mikael Calixto da Silva", "Makael Kalixto"],
+    "aliases": ["Mikael Calixto da Silva", "Mikael Calixto", "Makael Kalixto"],
     "image": "/authors/makael-kalixto.webp",
     "imagePosition": "48% 16%",
     "roles": ["Pregador itinerante", "Diácono", "Escritor"],
@@ -194,8 +225,16 @@
     "aliases": ["Gadyel Espindola"],
     "image": "/authors/gadyel.webp",
     "imagePosition": "28% 20%",
-    "roles": [],
-    "bio": []
+    "roles": ["Ministro consagrado", "Líder de Ensino", "Professor", "Escritor"],
+    "location": "Joinville/SC",
+    "works": ["A Nova Aliança: o cumprimento da promessa em Cristo"],
+    "bio": [
+      "Gadyel Espindola, tem 30 anos, é casado e Natural de Joinville/SC.",
+      "Gadyel é ministro consagrado e atua na Comunidade Cristã Soma, onde lidera a área de Ensino, e dedica o seu ministério à formação de discípulos e ao ensino das Escrituras, buscando contribuir para uma igreja fundamentada na Palavra e comprometida com uma Fé prática.",
+      "É graduado em Tecnologia em Logística, e possui Formação Teológica complementar por meio de diferentes cursos e escolas de formação cristã, e entre suas formações, destacam-se os cursos CCOM (Centro de Capacitação e Orientação Ministerial) e EPOS (Escola Preparatória de Obreiros Siloé), pela IEADJO, realizados em Joinville/SC, além de Formação Básica e Média em Teologia pela Portland Bible College, em Português, por meio da Comunidade Casa do Pai, de Araçatuba/SP.",
+      "Sua atuação ministerial é marcada pelo interesse no estudo das Escrituras, na formação cristã e na aplicação da Teologia à vida da Igreja. Como professor e ministro, procura tornar o conhecimento bíblico acessível, conectando a profundidade das Escrituras com os desafios da vida cristã e da caminhada de fé.",
+      "É autor de “A Nova Aliança: o cumprimento da promessa em Cristo”, obra dedicada ao estudo da Nova Aliança estabelecida por Jesus e suas implicações para a vida do cristão. Seu trabalho tem como propósito incentivar uma compreensão mais profunda da obra de Cristo, da vida em aliança e do chamado para viver de maneira coerente com aquilo que Deus estabeleceu por meio do evangelho."
+    ]
   },
   {
     "slug": "danilo-uchoa",
@@ -203,8 +242,17 @@
     "aliases": ["Danilo Uchoa"],
     "image": "/authors/danilo.webp",
     "imagePosition": "55% 16%",
-    "roles": [],
-    "bio": []
+    "roles": ["Teólogo", "Conferencista", "Palestrante", "Escritor"],
+    "location": "Curitiba/PR",
+    "family": {
+      "spouse": "Ana Júlia de Souza",
+      "children": ["Eloah Uchoa"]
+    },
+    "bio": [
+      "Danilo é Teólogo, Conferencista, Palestrante e Escritor. Danilo tem dedicado sua vida à pregação do Evangelho.",
+      "Casado com Ana Júlia de Souza, é pai de Eloah Uchoa.",
+      "Atualmente, reside com sua família em Curitiba/PR, onde serve a Deus na Assembleia de Deus no campo de Curitiba."
+    ]
   },
   {
     "slug": "daniel-steinhauser",
@@ -212,7 +260,28 @@
     "aliases": ["Daniel Steinhauser"],
     "image": "/authors/daniel-steinhauser.webp",
     "imagePosition": "50% 18%",
-    "roles": [],
-    "bio": []
+    "roles": ["Barbeiro visagista", "Empresário", "Líder de célula"],
+    "location": "Fraiburgo/SC",
+    "born": {
+      "place": "Alfredo Wagner/SC"
+    },
+    "family": {
+      "spouse": "Rosemeri Fachin Steinhauser",
+      "children": [
+        "Luís Henrique",
+        "Ana Beatriz",
+        "Paulo Ricardo",
+        "Maria Vitória",
+        "Marcelo",
+        "Valentina"
+      ]
+    },
+    "bio": [
+      "Daniel Steinhauser é barbeiro visagista e empresário, natural de Alfredo Wagner, Santa Catarina. Ainda criança, mudou-se para Florianópolis, onde viveu parte de sua infância. Há mais de 15 anos, mora em Fraiburgo, Santa Catarina, cidade onde construiu sua vida, sua família e sua trajetória profissional.",
+      "É casado com Rosemeri Fachin Steinhauser, com quem também administra sua barbearia. Como barbeiro visagista, dedica-se a valorizar a identidade e a personalidade de cada pessoa por meio de seu trabalho.",
+      "Daniel é pai de seis filhos: Luís Henrique, Ana Beatriz, Paulo Ricardo, Maria Vitória, Marcelo e Valentina.",
+      "Sua caminhada também é marcada pela fé e pelo serviço cristão. Congrega na Igreja Batista Shalon, onde, juntamente com sua esposa, exerce o ministério de líder de célula, servindo, cuidando de pessoas e contribuindo para o crescimento espiritual da igreja.",
+      "Sua história é construída sobre os pilares da família, trabalho, empreendedorismo, fé e serviço, procurando colocar seus dons e experiências a serviço de Deus e das pessoas."
+    ]
   }
 ]
