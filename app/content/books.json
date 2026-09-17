@@ -115,6 +115,19 @@
     "relatedSlugs": ["rabiscos-do-ceu-volume-1", "quando-o-pulpito-pesa"]
   },
   {
+    "slug": "jose-um-ramo-frutifero",
+    "title": "José, um Ramo Frutífero",
+    "subtitle": "Devocional",
+    "author": "Mikael Calixto",
+    "cover": "/covers/jose-um-ramo-frutifero.webp",
+    "format": "livro",
+    "categories": ["religioso"],
+    "excerpt": "Um devocional sobre a vida de José: florescer junto à Fonte, o Deus de Jacó.",
+    "description": "José, um Ramo Frutífero, de Mikael Calixto, é um devocional nascido do estudo da vida de José e de uma profunda identificação com a sua trajetória. A obra convida a Igreja a uma vida mais profunda com Deus, mostrando que José floresceu e teve êxito porque permaneceu junto à Fonte — o Deus de Jacó, o Semeador que semeia e a fonte que rega para o crescimento.",
+    "featured": false,
+    "relatedSlugs": ["da-rede-ao-reino", "o-proposito-de-deus-para-a-familia"]
+  },
+  {
     "slug": "legado-de-timoteo",
     "title": "Legado de Timóteo",
     "subtitle": "Lições para a família moderna",
@@ -126,6 +139,18 @@
     "description": "Legado de Timóteo, de Danilo Uchoa, traduz para a família moderna as lições de fé, formação e testemunho presentes na história de Timóteo. Uma obra para pais, líderes e lares que desejam transmitir um legado cristão.",
     "featured": false,
     "relatedSlugs": ["prossigo-para-o-alvo", "o-proposito-de-deus-para-a-familia"]
+  },
+  {
+    "slug": "o-deus-daqueles-que-fracassam",
+    "title": "O Deus Daqueles que Fracassam",
+    "author": "Rodrigo Lazzaretti",
+    "cover": "/covers/o-deus-daqueles-que-fracassam.webp",
+    "format": "livro",
+    "categories": ["religioso"],
+    "excerpt": "Uma palavra a quem se vê quebrado: o Deus que permanece com os que fracassam.",
+    "description": "O Deus Daqueles que Fracassam, de Rodrigo Lazzaretti, olha para o vaso rachado sem disfarçar a falha. A obra afirma que o fracasso não é o fim da história — e que há um Deus que se chega aos que se quebram, restaura o que parece irrecuperável e continua a sua obra em vasos frágeis.",
+    "featured": false,
+    "relatedSlugs": ["a-logica-da-serpente", "as-bodas-do-cordeiro"]
   },
   {
     "slug": "o-deus-que-nao-quebra-principios",
@@ -163,6 +188,18 @@
     "description": "Claudio Luz oferece um guia para construir, restaurar e prosperar a família segundo o coração de Deus. A obra une propósito bíblico e orientação prática para lares que desejam viver a fé em casa.",
     "featured": false,
     "relatedSlugs": ["legado-de-timoteo", "igrejas-doentes"]
+  },
+  {
+    "slug": "ortodoxia-pentecostal",
+    "title": "Ortodoxia Pentecostal",
+    "author": "Rodrigo S. Lazzaretti",
+    "cover": "/covers/ortodoxia-pentecostal.webp",
+    "format": "livro",
+    "categories": ["religioso"],
+    "excerpt": "Uma afirmação da ortodoxia pentecostal: fé, doutrina e o fogo do Espírito.",
+    "description": "Ortodoxia Pentecostal, de Rodrigo S. Lazzaretti, afirma a fé pentecostal sem abrir mão da sã doutrina. A obra convida o leitor a viver o fogo do Espírito com raízes firmes na Palavra — ortodoxia que não apaga o avivamento, e avivamento que não abandona a verdade.",
+    "featured": false,
+    "relatedSlugs": ["a-logica-da-serpente", "entre-a-cruz-e-a-decisao"]
   },
   {
     "slug": "prossigo-para-o-alvo",
