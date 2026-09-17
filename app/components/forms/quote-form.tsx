@@ -2,8 +2,8 @@
 
 import { useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Turnstile, type TurnstileInstance } from "@marsidev/react-turnstile";
 import { BookOpen, CheckCircle2, Loader2, Send } from "lucide-react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { useForm, useWatch } from "react-hook-form";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ import {
   type QuoteFields,
 } from "@/lib/validation/quote";
 
-const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 // URL search string as an external store: empty on the server so the form
 // stays statically prerendered, real value on the client without mismatch.
@@ -38,6 +38,10 @@ function useSearchString(): string {
   );
 }
 
+function useIsClient() {
+  return useSyncExternalStore(emptySubscribe, () => true, () => false);
+}
+
 function FieldError({ message }: { message?: string }) {
   if (!message) return null;
   return (
@@ -48,6 +52,7 @@ function FieldError({ message }: { message?: string }) {
 }
 
 export function QuoteForm() {
+  const isClient = useIsClient();
   const search = useSearchString();
   const referencedBook = useMemo<Book | undefined>(() => {
     const slug = new URLSearchParams(search).get("livro");
@@ -55,8 +60,8 @@ export function QuoteForm() {
   }, [search]);
 
   const [submitted, setSubmitted] = useState(false);
-  const [turnstileToken, setTurnstileToken] = useState("");
-  const turnstileRef = useRef<TurnstileInstance>(null);
+  const [captchaToken, setCaptchaToken] = useState("");
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
   const honeypotRef = useRef<HTMLInputElement>(null);
 
   const {
@@ -79,8 +84,8 @@ export function QuoteForm() {
   });
 
   const projectType = useWatch({ control, name: "projectType" });
-  // Captcha gating: submit stays disabled until Turnstile issues a token.
-  const captchaPending = Boolean(TURNSTILE_SITE_KEY) && !turnstileToken;
+  // Captcha gating: submit stays disabled until reCAPTCHA issues a token.
+  const captchaPending = Boolean(RECAPTCHA_SITE_KEY) && !captchaToken;
 
   async function onSubmit(fields: QuoteFields) {
     try {
@@ -90,7 +95,7 @@ export function QuoteForm() {
         body: JSON.stringify({
           ...fields,
           reference: referencedBook?.title ?? "",
-          turnstileToken: turnstileToken || "dev-bypass",
+          captchaToken: captchaToken || "dev-bypass",
           website: honeypotRef.current?.value ?? "",
         }),
       });
@@ -113,8 +118,8 @@ export function QuoteForm() {
           ? error.message
           : "Não foi possível enviar sua solicitação. Tente novamente.",
       );
-      turnstileRef.current?.reset();
-      setTurnstileToken("");
+      recaptchaRef.current?.reset();
+      setCaptchaToken("");
     }
   }
 
@@ -268,16 +273,17 @@ export function QuoteForm() {
         />
       </div>
 
-      {TURNSTILE_SITE_KEY ? (
-        <Turnstile
-          ref={turnstileRef}
-          siteKey={TURNSTILE_SITE_KEY}
-          onSuccess={(token) => setTurnstileToken(token)}
-          onExpire={() => {
-            setTurnstileToken("");
-            turnstileRef.current?.reset();
+      {isClient && RECAPTCHA_SITE_KEY ? (
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          sitekey={RECAPTCHA_SITE_KEY}
+          hl="pt-BR"
+          onChange={(token) => setCaptchaToken(token ?? "")}
+          onExpired={() => {
+            setCaptchaToken("");
+            recaptchaRef.current?.reset();
           }}
-          options={{ theme: "light", language: "pt-BR" }}
+          onErrored={() => setCaptchaToken("")}
         />
       ) : null}
 

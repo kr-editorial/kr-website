@@ -25,24 +25,30 @@ function isRateLimited(ip: string): boolean {
   return false;
 }
 
-async function verifyTurnstile(token: string, ip: string): Promise<boolean> {
-  const secret = process.env.TURNSTILE_SECRET_KEY;
+async function verifyRecaptcha(token: string, ip: string): Promise<boolean> {
+  const secret = process.env.RECAPTCHA_SECRET_KEY;
 
   if (!secret) {
     if (process.env.NODE_ENV !== "production") {
-      console.warn("[quote] TURNSTILE_SECRET_KEY ausente; captcha ignorado em desenvolvimento.");
+      console.warn("[quote] RECAPTCHA_SECRET_KEY ausente; captcha ignorado em desenvolvimento.");
       return true;
     }
-    console.error("[quote] TURNSTILE_SECRET_KEY não configurada.");
+    console.error("[quote] RECAPTCHA_SECRET_KEY não configurada.");
     return false;
   }
 
+  const params = new URLSearchParams({
+    secret,
+    response: token,
+    remoteip: ip,
+  });
+
   const response = await fetch(
-    "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+    "https://www.google.com/recaptcha/api/siteverify",
     {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ secret, response: token, remoteip: ip }),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: params,
     },
   );
 
@@ -91,9 +97,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const { turnstileToken, ...fields } = parsed.data;
+  const { captchaToken, ...fields } = parsed.data;
 
-  const isHuman = await verifyTurnstile(turnstileToken, ip);
+  const isHuman = await verifyRecaptcha(captchaToken, ip);
   if (!isHuman) {
     return NextResponse.json(
       { error: "Verificação falhou, tente novamente" },

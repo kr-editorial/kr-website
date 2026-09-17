@@ -66,7 +66,7 @@ export const quoteFieldsSchema = z.object({
 });
 
 export const quoteRequestSchema = quoteFieldsSchema.extend({
-  turnstileToken: z.string().min(1, "Confirme que você não é um robô."),
+  captchaToken: z.string().min(1, "Confirme que você não é um robô."),
 });
 
 export type QuoteFields = z.infer<typeof quoteFieldsSchema>;
