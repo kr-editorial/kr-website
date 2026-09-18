@@ -11,7 +11,7 @@ import { SectionHeading } from "@/components/brand/section-heading";
 import { site } from "@/lib/content";
 
 const audienceIcons: Record<string, LucideIcon> = {
-  Autores: PenTool,
+  Pregadores: PenTool,
   Acadêmicos: GraduationCap,
   Pastores: Church,
   Pesquisadores: Microscope,
