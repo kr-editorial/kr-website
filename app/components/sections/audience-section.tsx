@@ -2,8 +2,8 @@ import {
   Building2,
   Church,
   GraduationCap,
+  MicVocal,
   Microscope,
-  PenTool,
   type LucideIcon,
 } from "lucide-react";
 import { BlobDecoration } from "@/components/brand/blob-decoration";
@@ -11,7 +11,7 @@ import { SectionHeading } from "@/components/brand/section-heading";
 import { site } from "@/lib/content";
 
 const audienceIcons: Record<string, LucideIcon> = {
-  Pregadores: PenTool,
+  Pregadores: MicVocal,
   Acadêmicos: GraduationCap,
   Pastores: Church,
   Pesquisadores: Microscope,
