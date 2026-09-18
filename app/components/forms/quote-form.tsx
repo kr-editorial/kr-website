@@ -4,26 +4,15 @@ import { useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { BookOpen, CheckCircle2, Loader2, Send } from "lucide-react";
 import ReCAPTCHA from "react-google-recaptcha";
-import { useForm, useWatch } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { getBookBySlug } from "@/lib/content";
 import type { Book } from "@/lib/types";
-import {
-  projectTypes,
-  quoteFieldsSchema,
-  type QuoteFields,
-} from "@/lib/validation/quote";
+import { quoteFieldsSchema, type QuoteFields } from "@/lib/validation/quote";
 
 const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
@@ -67,8 +56,6 @@ export function QuoteForm() {
   const {
     register,
     handleSubmit,
-    setValue,
-    control,
     formState: { errors, isSubmitting },
   } = useForm<QuoteFields>({
     resolver: zodResolver(quoteFieldsSchema),
@@ -83,7 +70,6 @@ export function QuoteForm() {
     },
   });
 
-  const projectType = useWatch({ control, name: "projectType" });
   // Captcha gating: submit stays disabled until reCAPTCHA issues a token.
   const captchaPending = Boolean(RECAPTCHA_SITE_KEY) && !captchaToken;
 
@@ -207,45 +193,16 @@ export function QuoteForm() {
         </div>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div className="space-y-2">
-          <Label htmlFor="projectType">Tipo de projeto *</Label>
-          <Select
-            value={projectType}
-            onValueChange={(value) =>
-              setValue("projectType", value as QuoteFields["projectType"], {
-                shouldValidate: true,
-              })
-            }
-          >
-            <SelectTrigger
-              id="projectType"
-              className="w-full"
-              aria-invalid={Boolean(errors.projectType)}
-            >
-              <SelectValue placeholder="Selecione uma opção" />
-            </SelectTrigger>
-            <SelectContent>
-              {projectTypes.map((type) => (
-                <SelectItem key={type.value} value={type.value}>
-                  {type.label}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-          <FieldError message={errors.projectType?.message} />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="quantity">Tiragem estimada</Label>
-          <Input
-            id="quantity"
-            inputMode="numeric"
-            placeholder="Ex.: 500 exemplares"
-            aria-invalid={Boolean(errors.quantity)}
-            {...register("quantity")}
-          />
-          <FieldError message={errors.quantity?.message} />
-        </div>
+      <div className="space-y-2 sm:max-w-sm">
+        <Label htmlFor="quantity">Tiragem estimada</Label>
+        <Input
+          id="quantity"
+          inputMode="numeric"
+          placeholder="Ex.: 500 exemplares"
+          aria-invalid={Boolean(errors.quantity)}
+          {...register("quantity")}
+        />
+        <FieldError message={errors.quantity?.message} />
       </div>
 
       <div className="space-y-2">

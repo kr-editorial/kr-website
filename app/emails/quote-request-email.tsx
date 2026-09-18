@@ -9,7 +9,7 @@ import {
   Section,
   Text,
 } from "@react-email/components";
-import { projectTypes, type QuoteFields } from "@/lib/validation/quote";
+import { type QuoteFields } from "@/lib/validation/quote";
 
 const styles = {
   body: {
@@ -71,15 +71,10 @@ export function QuoteRequestEmail({
   email,
   phone,
   institution,
-  projectType,
   quantity,
   message,
   reference,
 }: QuoteFields) {
-  const projectTypeLabel =
-    projectTypes.find((type) => type.value === projectType)?.label ??
-    projectType;
-
   return (
     <Html lang="pt-BR">
       <Head />
@@ -111,9 +106,6 @@ export function QuoteRequestEmail({
                 <Text style={styles.value}>{institution}</Text>
               </>
             ) : null}
-
-            <Text style={styles.label}>Tipo de projeto</Text>
-            <Text style={styles.value}>{projectTypeLabel}</Text>
 
             {quantity ? (
               <>

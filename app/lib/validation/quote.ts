@@ -1,25 +1,5 @@
 import { z } from "zod";
 
-export const projectTypes = [
-  { value: "livro", label: "Livro impresso" },
-  { value: "ebook", label: "E-book" },
-  { value: "artigo", label: "Artigo científico" },
-  { value: "tcc", label: "TCC / Monografia" },
-  { value: "dissertacao", label: "Dissertação de mestrado" },
-  { value: "tese", label: "Tese de doutorado" },
-  { value: "outro", label: "Outro projeto" },
-] as const;
-
-const projectTypeValues = [
-  "livro",
-  "ebook",
-  "artigo",
-  "tcc",
-  "dissertacao",
-  "tese",
-  "outro",
-] as const;
-
 export const quoteFieldsSchema = z.object({
   name: z
     .string()
@@ -43,9 +23,6 @@ export const quoteFieldsSchema = z.object({
     .max(160, "Nome da instituição muito longo.")
     .optional()
     .or(z.literal("")),
-  projectType: z.enum(projectTypeValues, {
-    errorMap: () => ({ message: "Selecione o tipo de projeto." }),
-  }),
   quantity: z
     .string()
     .trim()
